@@ -24,18 +24,10 @@ $column-width: 4.563em; /* 73px on a 16px base font size */
 $gutter-width: 1.250em; /* 20px on a 16px base font size */
 $grid-padding: $gutter-width/2;
 
-
-
-
-
-
-
-
-
 /* Breakpoints */
-
-$breakpoint_1: 35em lt-ie9;
-$breakpoint_2: 55em lt-ie9;
+$breakpoint_1: 22em lt-ie9; /* iPhone landscape */
+$breakpoint_2: 32em lt-ie9; /* iPad portrait */
+$breakpoint_3: 49em lt-ie9; /* iPad landscape */
 
 
 /* Layout */
@@ -60,13 +52,6 @@ header, footer, .main {
         padding: 0 20px;
       }
     }
-  }
-}
-
-aside {
-  display: none;
-  @include at-breakpoint($breakpoint_1) {
-    display: block;
   }
 }
 
@@ -111,49 +96,6 @@ aside {
   @include at-breakpoint($breakpoint_1) {
     .main {
       @include span-columns(12 omega, 12);
-      .panel-2col {
-        .inside {
-          margin: 0;
-        }
-        .panel-col-first {
-          @include span-columns(8, 12);
-        }
-        .panel-col-last {
-          @include span-columns(4 omega, 12);
-        }
-      }
-      .panel-3col-33-stacked {
-        .inside {
-          margin: 0;
-        }
-        .center-wrapper {
-          @include cf;
-          .panel-panel {
-            @include span-columns(4, 12);
-          }
-          .panel-col-last {
-            @include omega;
-          }
-        }
-      }
-      .panel-3col-stacked {
-        .inside {
-          margin: 0;
-        }
-        .center-wrapper {
-          @include cf;
-          .panel-panel {
-            @include span-columns(6, 12);
-          }
-          .panel-col-first,
-          .panel-col-last {
-            @include span-columns(3, 12);
-          }
-          .panel-col-last {
-            @include omega;
-          }
-        }
-      }
     }
   }
 }

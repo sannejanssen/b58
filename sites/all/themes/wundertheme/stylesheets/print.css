@@ -346,8 +346,11 @@ table {
 /* 73px on a 16px base font size */
 /* 20px on a 16px base font size */
 /* Breakpoints */
+/* iPhone landscape */
+/* iPad portrait */
+/* iPad landscape */
 /* Layout */
-/* line 43, ../sass/base/_layout.scss */
+/* line 35, ../sass/base/_layout.scss */
 .container {
   *zoom: 1;
   max-width: 68.506em;
@@ -364,12 +367,12 @@ table {
   clear: both;
 }
 
-/* line 51, ../sass/base/_layout.scss */
+/* line 43, ../sass/base/_layout.scss */
 .primary_navigation {
   display: none;
 }
-@media (min-width: 35em) {
-  /* line 51, ../sass/base/_layout.scss */
+@media (min-width: 22em) {
+  /* line 43, ../sass/base/_layout.scss */
   .primary_navigation {
     display: block;
   }
@@ -378,61 +381,46 @@ table {
 .lt-ie9 .primary_navigation {
   display: block;
 }
-@media (min-width: 55em) {
-  /* line 58, ../sass/base/_layout.scss */
+@media (min-width: 32em) {
+  /* line 50, ../sass/base/_layout.scss */
   .primary_navigation ul.menu a {
     font-size: 16px;
     padding: 0 20px;
   }
 }
-/* line 58, ../sass/base/_layout.scss */
+/* line 50, ../sass/base/_layout.scss */
 .lt-ie9 .primary_navigation ul.menu a {
   font-size: 16px;
   padding: 0 20px;
 }
 
-/* line 66, ../sass/base/_layout.scss */
-aside {
-  display: none;
-}
-@media (min-width: 35em) {
-  /* line 66, ../sass/base/_layout.scss */
-  aside {
-    display: block;
-  }
-}
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
-.lt-ie9 aside {
-  display: block;
-}
-
-@media (min-width: 35em) {
-  /* line 76, ../sass/base/_layout.scss */
+@media (min-width: 22em) {
+  /* line 61, ../sass/base/_layout.scss */
   .one-sidebar.sidebar-first .main {
     width: 74.54384%;
     float: right;
     margin-right: 0;
   }
-  /* line 81, ../sass/base/_layout.scss */
+  /* line 66, ../sass/base/_layout.scss */
   .one-sidebar.sidebar-second .main {
     width: 74.54384%;
     float: left;
     margin-right: 1.82466%;
   }
-  /* line 86, ../sass/base/_layout.scss */
+  /* line 71, ../sass/base/_layout.scss */
   .one-sidebar aside.sidebar_first {
     width: 23.63151%;
     float: left;
     margin-right: 1.82466%;
   }
-  /* line 89, ../sass/base/_layout.scss */
+  /* line 74, ../sass/base/_layout.scss */
   .one-sidebar aside.sidebar_second {
     width: 23.63151%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 76, ../sass/base/_layout.scss */
+/* line 61, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar.sidebar-first .main {
   width: 74.54384%;
   float: right;
@@ -440,21 +428,21 @@ aside {
   #margin-left: -1.25em;
   display: inline;
 }
-/* line 81, ../sass/base/_layout.scss */
+/* line 66, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar.sidebar-second .main {
   width: 74.54384%;
   float: left;
   margin-right: 1.82466%;
   display: inline;
 }
-/* line 86, ../sass/base/_layout.scss */
+/* line 71, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar aside.sidebar_first {
   width: 23.63151%;
   float: left;
   margin-right: 1.82466%;
   display: inline;
 }
-/* line 89, ../sass/base/_layout.scss */
+/* line 74, ../sass/base/_layout.scss */
 .lt-ie9 .one-sidebar aside.sidebar_second {
   width: 23.63151%;
   float: right;
@@ -463,41 +451,41 @@ aside {
   display: inline;
 }
 
-@media (min-width: 35em) {
-  /* line 98, ../sass/base/_layout.scss */
+@media (min-width: 22em) {
+  /* line 83, ../sass/base/_layout.scss */
   .two-sidebars .main {
     width: 49.08767%;
     float: left;
     margin-right: 1.82466%;
   }
-  /* line 101, ../sass/base/_layout.scss */
+  /* line 86, ../sass/base/_layout.scss */
   .two-sidebars .sidebar_first {
     width: 23.63151%;
     float: left;
     margin-right: 1.82466%;
   }
-  /* line 104, ../sass/base/_layout.scss */
+  /* line 89, ../sass/base/_layout.scss */
   .two-sidebars .sidebar_second {
     width: 23.63151%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 98, ../sass/base/_layout.scss */
+/* line 83, ../sass/base/_layout.scss */
 .lt-ie9 .two-sidebars .main {
   width: 49.08767%;
   float: left;
   margin-right: 1.82466%;
   display: inline;
 }
-/* line 101, ../sass/base/_layout.scss */
+/* line 86, ../sass/base/_layout.scss */
 .lt-ie9 .two-sidebars .sidebar_first {
   width: 23.63151%;
   float: left;
   margin-right: 1.82466%;
   display: inline;
 }
-/* line 104, ../sass/base/_layout.scss */
+/* line 89, ../sass/base/_layout.scss */
 .lt-ie9 .two-sidebars .sidebar_second {
   width: 23.63151%;
   float: right;
@@ -506,88 +494,15 @@ aside {
   display: inline;
 }
 
-@media (min-width: 35em) {
-  /* line 112, ../sass/base/_layout.scss */
+@media (min-width: 22em) {
+  /* line 97, ../sass/base/_layout.scss */
   .no-sidebars .main {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 115, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-2col .inside {
-    margin: 0;
-  }
-  /* line 118, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-2col .panel-col-first {
-    width: 66.05845%;
-    float: left;
-    margin-right: 1.82466%;
-  }
-  /* line 121, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-2col .panel-col-last {
-    width: 32.11689%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 126, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-33-stacked .inside {
-    margin: 0;
-  }
-  /* line 129, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-33-stacked .center-wrapper {
-    zoom: 1;
-  }
-  /* line 431, ../sass/base/logic/_mixins.scss */
-  .no-sidebars .main .panel-3col-33-stacked .center-wrapper:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* line 131, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-panel {
-    width: 32.11689%;
-    float: left;
-    margin-right: 1.82466%;
-  }
-  /* line 134, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-col-last {
-    float: right;
-    margin-right: 0;
-  }
-  /* line 140, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-stacked .inside {
-    margin: 0;
-  }
-  /* line 143, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-stacked .center-wrapper {
-    zoom: 1;
-  }
-  /* line 431, ../sass/base/logic/_mixins.scss */
-  .no-sidebars .main .panel-3col-stacked .center-wrapper:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* line 145, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-panel {
-    width: 49.08767%;
-    float: left;
-    margin-right: 1.82466%;
-  }
-  /* line 149, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-first,
-  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
-    width: 23.63151%;
-    float: left;
-    margin-right: 1.82466%;
-  }
-  /* line 152, ../sass/base/_layout.scss */
-  .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
-    float: right;
-    margin-right: 0;
-  }
 }
-/* line 112, ../sass/base/_layout.scss */
+/* line 97, ../sass/base/_layout.scss */
 .lt-ie9 .no-sidebars .main {
   width: 100%;
   float: right;
@@ -595,92 +510,9 @@ aside {
   #margin-left: -1.25em;
   display: inline;
 }
-/* line 115, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-2col .inside {
-  margin: 0;
-}
-/* line 118, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-2col .panel-col-first {
-  width: 66.05845%;
-  float: left;
-  margin-right: 1.82466%;
-  display: inline;
-}
-/* line 121, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-2col .panel-col-last {
-  width: 32.11689%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.25em;
-  display: inline;
-}
-/* line 126, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .inside {
-  margin: 0;
-}
-/* line 129, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper {
-  zoom: 1;
-}
-/* line 431, ../sass/base/logic/_mixins.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 131, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-panel {
-  width: 32.11689%;
-  float: left;
-  margin-right: 1.82466%;
-  display: inline;
-}
-/* line 134, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-33-stacked .center-wrapper .panel-col-last {
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.25em;
-  display: inline;
-}
-/* line 140, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .inside {
-  margin: 0;
-}
-/* line 143, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper {
-  zoom: 1;
-}
-/* line 431, ../sass/base/logic/_mixins.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 145, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-panel {
-  width: 49.08767%;
-  float: left;
-  margin-right: 1.82466%;
-  display: inline;
-}
-/* line 149, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-first,
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
-  width: 23.63151%;
-  float: left;
-  margin-right: 1.82466%;
-  display: inline;
-}
-/* line 152, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main .panel-3col-stacked .center-wrapper .panel-col-last {
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.25em;
-  display: inline;
-}
 
-@media (min-width: 35em) {
-  /* line 161, ../sass/base/_layout.scss */
+@media (min-width: 22em) {
+  /* line 103, ../sass/base/_layout.scss */
   footer {
     clear: both;
   }

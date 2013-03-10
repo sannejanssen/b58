@@ -86,14 +86,18 @@
 
       <?php if ($logo): ?>
         <figure class="logo">
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
+          <?php if($is_front): ?>
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <?php else: ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            </a>
+          <?php endif; ?>
         </figure>
       <?php endif; ?>
 
       <?php if($site_name OR $site_slogan ): ?>
-        <hgroup class="site-name">
+        <hgroup class="site-name element-invisible">
           <?php if($site_name): ?>
             <?php if($is_front): ?>
               <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
