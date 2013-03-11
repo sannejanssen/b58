@@ -353,12 +353,12 @@ table {
 /* line 35, ../sass/base/_layout.scss */
 .container {
   *zoom: 1;
-  max-width: 68.506em;
-  _width: 68.506em;
+  max-width: 64.464em;
+  _width: 64.464em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.625em;
-  padding-right: 0.625em;
+  padding-left: 0.588em;
+  padding-right: 0.588em;
 }
 /* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
@@ -388,25 +388,25 @@ table {
 @media (min-width: 22em) {
   /* line 61, ../sass/base/_layout.scss */
   .one-sidebar.sidebar-first .main {
-    width: 74.54384%;
+    width: 74.54393%;
     float: right;
     margin-right: 0;
   }
   /* line 66, ../sass/base/_layout.scss */
   .one-sidebar.sidebar-second .main {
-    width: 74.54384%;
+    width: 74.54393%;
     float: left;
-    margin-right: 1.82466%;
+    margin-right: 1.82427%;
   }
   /* line 71, ../sass/base/_layout.scss */
   .one-sidebar aside.sidebar_first {
-    width: 23.63151%;
+    width: 23.63179%;
     float: left;
-    margin-right: 1.82466%;
+    margin-right: 1.82427%;
   }
   /* line 74, ../sass/base/_layout.scss */
   .one-sidebar aside.sidebar_second {
-    width: 23.63151%;
+    width: 23.63179%;
     float: right;
     margin-right: 0;
   }
@@ -415,19 +415,19 @@ table {
 @media (min-width: 22em) {
   /* line 83, ../sass/base/_layout.scss */
   .two-sidebars .main {
-    width: 49.08767%;
+    width: 49.08786%;
     float: left;
-    margin-right: 1.82466%;
+    margin-right: 1.82427%;
   }
   /* line 86, ../sass/base/_layout.scss */
   .two-sidebars .sidebar_first {
-    width: 23.63151%;
+    width: 23.63179%;
     float: left;
-    margin-right: 1.82466%;
+    margin-right: 1.82427%;
   }
   /* line 89, ../sass/base/_layout.scss */
   .two-sidebars .sidebar_second {
-    width: 23.63151%;
+    width: 23.63179%;
     float: right;
     margin-right: 0;
   }
@@ -462,9 +462,14 @@ table {
  *
  * If you change the base-font-size, check your grid settings in base/layout.scss 
  */
-/* line 27, ../sass/base/_typography.scss */
+/*
+ * Base font
+ * Source Sans Pro
+ * Available weights: 200,400,600;
+ */
+/* line 33, ../sass/base/_typography.scss */
 html {
-  font-size: 100%;
+  font-size: 106.25%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -472,7 +477,7 @@ html {
   /* 2 */
 }
 
-/* line 38, ../sass/base/_typography.scss */
+/* line 44, ../sass/base/_typography.scss */
 html,
 button,
 input,
@@ -480,48 +485,54 @@ select,
 textarea {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: normal;
+  font-weight: 400;
+}
+
+/* line 50, ../sass/base/_typography.scss */
+label {
+  font-weight: normal;
 }
 
 /* Line-heights */
-/* line 44, ../sass/base/_typography.scss */
+/* line 55, ../sass/base/_typography.scss */
 h1 {
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 1.41176em;
   font-weight: normal;
 }
 
-/* line 49, ../sass/base/_typography.scss */
+/* line 60, ../sass/base/_typography.scss */
 h2 {
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 1.88235em;
   font-weight: normal;
 }
 
-/* line 54, ../sass/base/_typography.scss */
+/* line 65, ../sass/base/_typography.scss */
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
+  line-height: 1.20664em;
   font-weight: normal;
 }
 
-/* line 59, ../sass/base/_typography.scss */
+/* line 70, ../sass/base/_typography.scss */
 h4 {
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.41176em;
   font-weight: normal;
 }
 
-/* line 64, ../sass/base/_typography.scss */
+/* line 75, ../sass/base/_typography.scss */
 h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
+  line-height: 1.70092em;
   font-weight: normal;
 }
 
-/* line 69, ../sass/base/_typography.scss */
+/* line 80, ../sass/base/_typography.scss */
 h6 {
   font-size: 0.75em;
-  line-height: 2em;
+  line-height: 1.88235em;
   font-weight: normal;
 }
 
@@ -535,60 +546,60 @@ h6 {
 header {
   width: 100%;
   float: left;
-  margin-right: 1.82466%;
+  margin-right: 1.82427%;
   display: inline;
   background: orange;
 }
-@media (min-width: 22em) {
+@media (min-width: 23.375em) {
   /* line 8, ../sass/base/_design.scss */
   header {
     background: green;
   }
 }
-@media (min-width: 32em) {
+@media (min-width: 34em) {
   /* line 8, ../sass/base/_design.scss */
   header {
     background: red;
   }
 }
-@media (min-width: 49em) {
+@media (min-width: 52.0625em) {
   /* line 8, ../sass/base/_design.scss */
   header {
     background: yellow;
   }
 }
-/* line 32, ../sass/base/_design.scss */
+/* line 26, ../sass/base/_design.scss */
 header .logo {
   width: 100%;
   float: left;
-  margin-right: 1.82466%;
+  margin-right: 1.82427%;
   display: inline;
   margin-top: 1em;
 }
-/* line 40, ../sass/base/_design.scss */
+/* line 34, ../sass/base/_design.scss */
 header .header {
-  width: 57.57306%;
+  width: 57.57322%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.25em;
+  #margin-left: -1.176em;
   display: inline;
 }
 
 /* Base link settings */
-/* line 54, ../sass/base/_design.scss */
+/* line 48, ../sass/base/_design.scss */
 a {
   color: #58b8d1;
 }
-/* line 58, ../sass/base/_design.scss */
+/* line 52, ../sass/base/_design.scss */
 a:hover, a:focus {
   color: #df006e;
 }
 
-/* line 63, ../sass/base/_design.scss */
+/* line 57, ../sass/base/_design.scss */
 html {
   color: #333333;
 }
-/* line 67, ../sass/base/_design.scss */
+/* line 61, ../sass/base/_design.scss */
 html ::selection,
 html ::-moz-selection {
   color: #cccccc;

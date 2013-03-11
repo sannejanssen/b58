@@ -84,6 +84,12 @@
   <header role="banner">
     <div class="container">
 
+      <?php if ($page['top']): ?>
+        <div class="top">
+          <?php print render($page['top']); ?>
+        </div>
+      <?php endif; ?>
+
       <?php if ($logo): ?>
         <figure class="logo">
           <?php if($is_front): ?>

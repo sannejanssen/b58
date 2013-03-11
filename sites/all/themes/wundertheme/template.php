@@ -112,3 +112,18 @@ function wundertheme_preprocess_page(&$variables){
     }
   }
 }
+
+function wundertheme_preprocess_block(&$variables){
+  dpm($variables['classes_array']);
+
+  $to_remove = array();
+  $to_remove[] = 'block';
+  $to_remove[] = 'block-system';
+
+  
+
+
+  // $array=array(312, 401, 1599, 3);
+  // $toDelete=401;
+  // $array=array_diff($array, array($toDelete));
+}

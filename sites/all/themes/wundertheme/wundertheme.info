@@ -8,6 +8,7 @@ core = 7.x
 ; Regions.
 ; --------------------------------------------------------------------------
 
+regions[top] = Top
 regions[header] = Header
 regions[primary_navigation] = Primary navigation
 regions[sidebar_first] = Sidebar first
