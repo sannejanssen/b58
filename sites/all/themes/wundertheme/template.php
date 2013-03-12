@@ -113,17 +113,18 @@ function wundertheme_preprocess_page(&$variables){
   }
 }
 
+/**
+ * Remove unused block classes.
+ */
 function wundertheme_preprocess_block(&$variables){
-  dpm($variables['classes_array']);
+  $original_classes = $variables['classes_array'];
 
   $to_remove = array();
   $to_remove[] = 'block';
   $to_remove[] = 'block-system';
+  $to_remove[] = 'block-locale';
+  $to_remove[] = 'block-menu';
+  $to_remove[] = 'block-superfish';
 
-  
-
-
-  // $array=array(312, 401, 1599, 3);
-  // $toDelete=401;
-  // $array=array_diff($array, array($toDelete));
+  $variables['classes_array'] = array_diff($original_classes, $to_remove);
 }

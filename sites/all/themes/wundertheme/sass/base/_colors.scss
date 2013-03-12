@@ -8,6 +8,10 @@ $base-text-color: #333;
 $base-selected-text-color: invert($base-text-color);
 $base-selected-text-background-color: $base-text-color;
 
-$base-link-color: #58b8d1;
-$base-link-hover-color: #DF006E;
+$blue: #3298d6;
+
+$base-link-color: #444;
+$base-link-hover-color: $blue;
+
+$light-grey: #f0f0f0;
 

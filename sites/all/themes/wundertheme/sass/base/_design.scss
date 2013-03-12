@@ -4,53 +4,56 @@
  * Include all your design elements in this file.
  */
 
-/* Logo */
-header {
-  @include span-columns(12);
-  background: orange;
-
-  @include at-breakpoint($breakpoint_1) {
-    background: green;
-  }
-
-  @include at-breakpoint($breakpoint_2) {
-    background: red;
-  }
-
-  @include at-breakpoint($breakpoint_3) {
-    background: yellow;
-  }
-
-
-
-  .logo {
-
-    @include span-columns(12, 12);
-    margin-top: 1em;
-    img {
-      // margin-left: -3.750em;
-    }
-  }
-  .header {
-    @include span-columns(7 omega, 12);
-  }
-
-
-
-
-
+/* iPhone landscape */
+@include at-breakpoint($breakpoint_1) {
+}
+/* iPad portrait */
+@include at-breakpoint($breakpoint_2) {
+}
+/* iPad landscape */
+@include at-breakpoint($breakpoint_3) {
 }
 
 
+/* Logo */
+header {
+  @include span-columns(12);
+  margin-bottom: 1em;
+
+  .logo {
+    @include span-columns(10, 12);
+    img {
+      float: left;
+    }
+  }
+  .header {
+    @include span-columns(12);
+    position: relative;
+  }
+
+  /* iPad landscape */
+  @include at-breakpoint($breakpoint_3) {
+    .logo {
+      @include span-columns(5, 12);
+    }
+    .header {
+      @include span-columns(7 omega, 12);
+      position: relative;
+    }
+  }
+}
 
 
 /* Base link settings */
 a {
   color: $base-link-color;
+  text-decoration: none;
 
   &:hover,
-  &:focus {
+  &:focus
+  &:active {
     color: $base-link-hover-color;
+    text-decoration: underline;
   }
 }
 
@@ -64,4 +67,7 @@ html {
   }
 }
 
-  
+/* Base settings */
+h1, h2, h3, h4 {
+  margin-top: 0;
+}

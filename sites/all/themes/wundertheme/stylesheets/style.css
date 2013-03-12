@@ -323,6 +323,23 @@ table {
   clear: both;
 }
 
+/* line 100, ../sass/base/logic/_extendables.scss */
+.language ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 108, ../sass/base/logic/_extendables.scss */
+.language ul {
+  font-size: 0;
+}
+/* line 111, ../sass/base/logic/_extendables.scss */
+.language ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+
 /**
  * Layout
  *
@@ -536,74 +553,246 @@ h6 {
   font-weight: normal;
 }
 
-/*
- * Design
- * 
- * Include all your design elements in this file.
+/**
+ * Navigation
  */
-/* Logo */
-/* line 8, ../sass/base/_design.scss */
-header {
+/* Language switcher */
+/* line 6, ../sass/base/_navigation.scss */
+.language {
   width: 100%;
   float: left;
-  margin-right: 1.82427%;
+  margin-right: 2.44725%;
   display: inline;
-  background: orange;
+  margin-bottom: 0.5em;
+  /* iPad landscape */
 }
-@media (min-width: 23.375em) {
-  /* line 8, ../sass/base/_design.scss */
-  header {
-    background: green;
-  }
-}
-@media (min-width: 34em) {
-  /* line 8, ../sass/base/_design.scss */
-  header {
-    background: red;
-  }
-}
-@media (min-width: 52.0625em) {
-  /* line 8, ../sass/base/_design.scss */
-  header {
-    background: yellow;
-  }
-}
-/* line 26, ../sass/base/_design.scss */
-header .logo {
-  width: 100%;
+/* line 14, ../sass/base/_navigation.scss */
+.language li {
+  width: 31.70184%;
   float: left;
-  margin-right: 1.82427%;
+  margin-right: 2.44725%;
   display: inline;
-  margin-top: 1em;
+  text-align: center;
+  background-color: #f0f0f0;
 }
-/* line 34, ../sass/base/_design.scss */
-header .header {
-  width: 57.57322%;
+/* line 20, ../sass/base/_navigation.scss */
+.language li.last {
+  width: 31.70184%;
   float: right;
   margin-right: 0;
   #margin-left: -1.176em;
   display: inline;
 }
+/* line 23, ../sass/base/_navigation.scss */
+.language li a {
+  display: block;
+  padding: 5px 0 10px;
+  color: #575756;
+  opacity: 0.7;
+}
+/* line 31, ../sass/base/_navigation.scss */
+.language li a.active, .language li a:hover, .language li a:focus {
+  color: #000;
+}
+@media (min-width: 52.0625em) {
+  /* line 39, ../sass/base/_navigation.scss */
+  .language ul {
+    float: right;
+    background-color: #f0f0f0;
+    padding: 3px 20px 6px;
+    color: #575756;
+    font-size: 0.706em;
+  }
+  /* line 46, ../sass/base/_navigation.scss */
+  .language ul li {
+    background: none;
+    margin: 0;
+  }
+  /* line 50, ../sass/base/_navigation.scss */
+  .language ul li::after {
+    content: "|";
+    margin: 0 5px 8px;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  /* line 58, ../sass/base/_navigation.scss */
+  .language ul li.last::after {
+    content: "";
+    margin-right: 0;
+  }
+  /* line 65, ../sass/base/_navigation.scss */
+  .language ul li a {
+    padding: 5px 0px;
+    font-size: 0.706em;
+    display: inline;
+  }
+}
+
+/* Dropdown navigation */
+/* line 76, ../sass/base/_navigation.scss */
+div.main-nav {
+  display: none;
+  /* iPad landscape */
+}
+/* line 79, ../sass/base/_navigation.scss */
+div.main-nav h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@media (min-width: 52.0625em) {
+  /* line 76, ../sass/base/_navigation.scss */
+  div.main-nav {
+    display: block;
+  }
+}
+
+/* Responsive navigation */
+/* line 90, ../sass/base/_navigation.scss */
+nav.main {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  /* iPad landscape */
+}
+/* line 93, ../sass/base/_navigation.scss */
+nav.main h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* line 97, ../sass/base/_navigation.scss */
+nav.main .menu li {
+  display: block;
+  width: 100%;
+  background-color: #3298d6;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 103, ../sass/base/_navigation.scss */
+nav.main .menu li li {
+  background-color: #6fb7e2;
+  border-bottom: none;
+}
+/* line 112, ../sass/base/_navigation.scss */
+nav.main .menu li a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 15px;
+}
+/* line 121, ../sass/base/_navigation.scss */
+nav.main #navigationtoggle {
+  background-image: url("../images/mobile-nav.png");
+  background-image: none, url("../images/mobile-nav.svg"), url("../img/mobile-nav.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #3298d6;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #3298d6;
+}
+@media (min-width: 52.0625em) {
+  /* line 90, ../sass/base/_navigation.scss */
+  nav.main {
+    /* Hide basic navigation & show dropdown */
+    display: none;
+  }
+}
+
+/*
+
+/* iPhone landscape */
+/* iPad portrait */
+/* iPad landscape */
+/*
+ * Design
+ * 
+ * Include all your design elements in this file.
+ */
+/* iPhone landscape */
+/* iPad portrait */
+/* iPad landscape */
+/* Logo */
+/* line 19, ../sass/base/_design.scss */
+header {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  margin-bottom: 1em;
+  /* iPad landscape */
+}
+/* line 23, ../sass/base/_design.scss */
+header .logo {
+  width: 83.02929%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+}
+/* line 25, ../sass/base/_design.scss */
+header .logo img {
+  float: left;
+}
+/* line 29, ../sass/base/_design.scss */
+header .header {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  position: relative;
+}
+@media (min-width: 52.0625em) {
+  /* line 36, ../sass/base/_design.scss */
+  header .logo {
+    width: 40.60251%;
+    float: left;
+    margin-right: 1.82427%;
+  }
+  /* line 39, ../sass/base/_design.scss */
+  header .header {
+    width: 57.57322%;
+    float: right;
+    margin-right: 0;
+    position: relative;
+  }
+}
 
 /* Base link settings */
 /* line 48, ../sass/base/_design.scss */
 a {
-  color: #58b8d1;
+  color: #444444;
+  text-decoration: none;
 }
-/* line 52, ../sass/base/_design.scss */
-a:hover, a:focus {
-  color: #df006e;
+/* line 54, ../sass/base/_design.scss */
+a:hover, a:focus
+a:active {
+  color: #3298d6;
+  text-decoration: underline;
 }
 
-/* line 57, ../sass/base/_design.scss */
+/* line 60, ../sass/base/_design.scss */
 html {
   color: #333333;
 }
-/* line 61, ../sass/base/_design.scss */
+/* line 64, ../sass/base/_design.scss */
 html ::selection,
 html ::-moz-selection {
   color: #cccccc;
   background: #333333;
+}
+
+/* Base settings */
+/* line 71, ../sass/base/_design.scss */
+h1, h2, h3, h4 {
+  margin-top: 0;
 }
 
 /* ---------- Import styles ---------- */

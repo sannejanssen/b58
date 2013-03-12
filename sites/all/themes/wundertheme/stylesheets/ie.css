@@ -1,610 +1,103 @@
-/**
- * Internet Explorer style file
- *
- * This file is compiled into ie.css
- */
-/* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/*
+Syntax error: Base-level rules cannot contain the parent-selector-referencing character '&'.
+        on line 105 of /Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss, in `@content'
+        from line 26 of /Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss, in `layout'
+        from line 65 of /Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss, in `at-breakpoint'
+        from line 149 of /Users/Sanne/Documents/002_KLANTEN/0014_B58/06_WEBSITE/01_FILES/sites/all/themes/wundertheme/sass/base/_navigation.scss
+        from line 32 of /Users/Sanne/Documents/002_KLANTEN/0014_B58/06_WEBSITE/01_FILES/sites/all/themes/wundertheme/sass/ie.scss
 
-/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ---------- Import base ---------- */
-/**
- * Variables
- *
- * All general variables should be set here.
- */
-/**
- * Functions
- *
- * All custom functions should be in this file.
- */
-/**
- * Mixins
- *
- * Snippets of reusable CSS to develop faster and keep code readable
- */
-/* line 19, ../sass/base/logic/_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/* line 26, ../sass/base/logic/_normalize.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 36, ../sass/base/logic/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/* line 43, ../sass/base/logic/_normalize.scss */
-[hidden] {
-  display: none;
-}
-
-/* line 48, ../sass/base/logic/_normalize.scss */
-body {
-  margin: 0;
-}
-
-/* line 55, ../sass/base/logic/_normalize.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/* line 62, ../sass/base/logic/_normalize.scss */
-a:hover,
-a:active {
-  outline: 0;
-}
-
-/* line 67, ../sass/base/logic/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/* line 73, ../sass/base/logic/_normalize.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/* line 77, ../sass/base/logic/_normalize.scss */
-blockquote {
-  margin: 0;
-}
-
-/* line 82, ../sass/base/logic/_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/* line 87, ../sass/base/logic/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/* line 94, ../sass/base/logic/_normalize.scss */
-p,
-pre {
-  margin: 0;
-}
-
-/* line 103, ../sass/base/logic/_normalize.scss */
-pre,
-code,
-kbd,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-}
-
-/* line 111, ../sass/base/logic/_normalize.scss */
-pre {
+Backtrace:
+/Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss:105:in `@content'
+/Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss:26:in `layout'
+/Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss:65:in `at-breakpoint'
+/Users/Sanne/Documents/002_KLANTEN/0014_B58/06_WEBSITE/01_FILES/sites/all/themes/wundertheme/sass/base/_navigation.scss:149
+/Users/Sanne/Documents/002_KLANTEN/0014_B58/06_WEBSITE/01_FILES/sites/all/themes/wundertheme/sass/ie.scss:32
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/selector/comma_sequence.rb:30:in `resolve_parent_refs'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:190:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `visit_trace'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `visit_trace'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `visit_trace'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `visit_trace'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `visit_trace'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:159:in `visit_trace'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:133:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:133:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:133:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:30:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:44:in `with_parent'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:29:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:56:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:21:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:24:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:24:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/cssize.rb:6:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:22:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:147:in `recompile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:29
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/* line 119, ../sass/base/logic/_normalize.scss */
-q {
-  quotes: none;
-}
-
-/* line 124, ../sass/base/logic/_normalize.scss */
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-/* line 129, ../sass/base/logic/_normalize.scss */
-small {
-  font-size: 75%;
-}
-
-/* line 136, ../sass/base/logic/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 143, ../sass/base/logic/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 147, ../sass/base/logic/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* line 158, ../sass/base/logic/_normalize.scss */
-dl,
-menu,
-ol,
-ul,
-dd {
-  margin: 0;
-}
-
-/* line 165, ../sass/base/logic/_normalize.scss */
-menu,
-ol,
-ul {
-  padding: 0;
-}
-
-/* line 171, ../sass/base/logic/_normalize.scss */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/* line 181, ../sass/base/logic/_normalize.scss */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 189, ../sass/base/logic/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* line 196, ../sass/base/logic/_normalize.scss */
-figure {
-  margin: 0;
-}
-
-/* line 203, ../sass/base/logic/_normalize.scss */
-form {
-  margin: 0;
-}
-
-/* line 208, ../sass/base/logic/_normalize.scss */
-fieldset {
-  border-color: #c0c0c0;
-  margin: 0 2px;
-}
-
-/* line 216, ../sass/base/logic/_normalize.scss */
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
-  *margin-left: -7px;
-}
-
-/* line 234, ../sass/base/logic/_normalize.scss */
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-/* line 249, ../sass/base/logic/_normalize.scss */
-button,
-input {
-  line-height: normal;
-}
-
-/* line 260, ../sass/base/logic/_normalize.scss */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-  *overflow: visible;
-}
-
-/* line 273, ../sass/base/logic/_normalize.scss */
-button[disabled],
-input[disabled] {
-  cursor: default;
-}
-
-/* line 282, ../sass/base/logic/_normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  *height: 13px;
-  *width: 13px;
-}
-
-/* line 297, ../sass/base/logic/_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-/* line 306, ../sass/base/logic/_normalize.scss */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-
-/* line 313, ../sass/base/logic/_normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 320, ../sass/base/logic/_normalize.scss */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-/* line 330, ../sass/base/logic/_normalize.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/**
- * Extendables
- *
- * Collect all of your extendable classes, ids and silent extendables.
- */
-/* line 18, ../sass/base/logic/_extendables.scss */
-.clearfix, header, footer, .main {
-  *zoom: 1;
-}
-/* line 21, ../sass/base/logic/_extendables.scss */
-.clearfix:before, header:before, footer:before, .main:before, .clearfix:after, header:after, footer:after, .main:after {
-  display: table;
-  content: "";
-}
-/* line 25, ../sass/base/logic/_extendables.scss */
-.clearfix:after, header:after, footer:after, .main:after {
-  clear: both;
-}
-
-/**
- * Layout
- *
- * All layout theming should go in this file
- *
- *
- * Grid settings
- *
- * Set your base-font-size in typography.scss
- * Calculate your grid settings based on your base-font-size
- * Calculate your em's online: pxtoem.com
- * 
- * Ex: 12 col 960px 
- * Total:   960px = 60em          
- * Columns: 60px = 3.750em                    (x12  = 45em)
- * Gutters: 20px = 1.250em                    (x11  = 13.75em)
- * Grid padding: 10px = $gutter-width/2;      (x2   = 1.250em)
- *                                            ----------------
- *                                                    60em      
- */
-/* 73px on a 16px base font size */
-/* 20px on a 16px base font size */
-/* Breakpoints */
-/* iPhone landscape */
-/* iPad portrait */
-/* iPad landscape */
-/* Layout */
-/* line 35, ../sass/base/_layout.scss */
-.container {
-  *zoom: 1;
-  max-width: 64.464em;
-  _width: 64.464em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.588em;
-  padding-right: 0.588em;
-}
-/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 43, ../sass/base/_layout.scss */
-.primary_navigation {
-  display: none;
-}
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
-.lt-ie9 .primary_navigation {
-  display: block;
-}
-/* line 50, ../sass/base/_layout.scss */
-.lt-ie9 .primary_navigation ul.menu a {
-  font-size: 16px;
-  padding: 0 20px;
-}
-
-/* line 61, ../sass/base/_layout.scss */
-.lt-ie9 .one-sidebar.sidebar-first .main {
-  width: 74.54393%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.176em;
-  display: inline;
-}
-/* line 66, ../sass/base/_layout.scss */
-.lt-ie9 .one-sidebar.sidebar-second .main {
-  width: 74.54393%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-/* line 71, ../sass/base/_layout.scss */
-.lt-ie9 .one-sidebar aside.sidebar_first {
-  width: 23.63179%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-/* line 74, ../sass/base/_layout.scss */
-.lt-ie9 .one-sidebar aside.sidebar_second {
-  width: 23.63179%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.176em;
-  display: inline;
-}
-
-/* line 83, ../sass/base/_layout.scss */
-.lt-ie9 .two-sidebars .main {
-  width: 49.08786%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-/* line 86, ../sass/base/_layout.scss */
-.lt-ie9 .two-sidebars .sidebar_first {
-  width: 23.63179%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-/* line 89, ../sass/base/_layout.scss */
-.lt-ie9 .two-sidebars .sidebar_second {
-  width: 23.63179%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.176em;
-  display: inline;
-}
-
-/* line 97, ../sass/base/_layout.scss */
-.lt-ie9 .no-sidebars .main {
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.176em;
-  display: inline;
-}
-
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
-.lt-ie9 footer {
-  clear: both;
-}
-
-/**
- * Colors
- *
- * All colors used in the project should be declared here.
- */
-/**
- * Typography
- *
- * All typography settings belong in this file.
- * px to em converter: pxtoem.com
- *
- * If you change the base-font-size, check your grid settings in base/layout.scss 
- */
-/*
- * Base font
- * Source Sans Pro
- * Available weights: 200,400,600;
- */
-/* line 33, ../sass/base/_typography.scss */
-html {
-  font-size: 106.25%;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* line 44, ../sass/base/_typography.scss */
-html,
-button,
-input,
-select,
-textarea {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: normal;
-  font-weight: 400;
-}
-
-/* line 50, ../sass/base/_typography.scss */
-label {
-  font-weight: normal;
-}
-
-/* Line-heights */
-/* line 55, ../sass/base/_typography.scss */
-h1 {
-  font-size: 2em;
-  line-height: 1.41176em;
-  font-weight: normal;
-}
-
-/* line 60, ../sass/base/_typography.scss */
-h2 {
-  font-size: 1.5em;
-  line-height: 1.88235em;
-  font-weight: normal;
-}
-
-/* line 65, ../sass/base/_typography.scss */
-h3 {
-  font-size: 1.17em;
-  line-height: 1.20664em;
-  font-weight: normal;
-}
-
-/* line 70, ../sass/base/_typography.scss */
-h4 {
-  font-size: 1em;
-  line-height: 1.41176em;
-  font-weight: normal;
-}
-
-/* line 75, ../sass/base/_typography.scss */
-h5 {
-  font-size: 0.83em;
-  line-height: 1.70092em;
-  font-weight: normal;
-}
-
-/* line 80, ../sass/base/_typography.scss */
-h6 {
-  font-size: 0.75em;
-  line-height: 1.88235em;
-  font-weight: normal;
-}
-
-/*
- * Design
- * 
- * Include all your design elements in this file.
- */
-/* Logo */
-/* line 8, ../sass/base/_design.scss */
-header {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-  background: orange;
-}
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
-.lt-ie9 header {
-  background: green;
-}
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
-.lt-ie9 header {
-  background: red;
-}
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
-.lt-ie9 header {
-  background: yellow;
-}
-/* line 26, ../sass/base/_design.scss */
-header .logo {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-  margin-top: 1em;
-}
-/* line 34, ../sass/base/_design.scss */
-header .header {
-  width: 57.57322%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.176em;
-  display: inline;
-}
-
-/* Base link settings */
-/* line 48, ../sass/base/_design.scss */
-a {
-  color: #58b8d1;
-}
-/* line 52, ../sass/base/_design.scss */
-a:hover, a:focus {
-  color: #df006e;
-}
-
-/* line 57, ../sass/base/_design.scss */
-html {
-  color: #333333;
-}
-/* line 61, ../sass/base/_design.scss */
-html ::selection,
-html ::-moz-selection {
-  color: #cccccc;
-  background: #333333;
-}
-
-/* ---------- Import styles ---------- */
-/*
- * Style 1
- */
-/* ---------- Import features ---------- */
-/*
- * Feature 1
- */
+  font-family: monospace;
+  content: "Syntax error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 105 of /Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss, in `@content'\A         from line 26 of /Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss, in `layout'\A         from line 65 of /Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss, in `at-breakpoint'\A         from line 149 of /Users/Sanne/Documents/002_KLANTEN/0014_B58/06_WEBSITE/01_FILES/sites/all/themes/wundertheme/sass/base/_navigation.scss\A         from line 32 of /Users/Sanne/Documents/002_KLANTEN/0014_B58/06_WEBSITE/01_FILES/sites/all/themes/wundertheme/sass/ie.scss"; }

@@ -85,9 +85,7 @@
     <div class="container">
 
       <?php if ($page['top']): ?>
-        <div class="top">
-          <?php print render($page['top']); ?>
-        </div>
+        <?php print render($page['top']); ?>
       <?php endif; ?>
 
       <?php if ($logo): ?>
