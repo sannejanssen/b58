@@ -4,22 +4,21 @@
  * Include all your design elements in this file.
  */
 
-/* iPhone landscape */
+/*
+/* iPhone landscape
 @include at-breakpoint($breakpoint_1) {
 }
-/* iPad portrait */
+/* iPad portrait
 @include at-breakpoint($breakpoint_2) {
 }
-/* iPad landscape */
+/* iPad landscape
 @include at-breakpoint($breakpoint_3) {
 }
+*/
 
 
 /* Logo */
 header {
-  @include span-columns(12);
-  margin-bottom: 1em;
-
   .logo {
     @include span-columns(10, 12);
     img {
@@ -71,3 +70,22 @@ html {
 h1, h2, h3, h4 {
   margin-top: 0;
 }
+
+body {
+  background-color: #252525;
+}
+
+header,
+.center {
+  background-color: #fff;
+}
+
+.center {
+  padding: 1em 0;
+  min-height: 200px;
+}
+
+footer {
+  border-top: 1px solid #7c7c7c;
+}
+

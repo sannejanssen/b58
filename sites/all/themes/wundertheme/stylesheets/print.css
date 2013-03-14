@@ -4,14 +4,14 @@
  * This file is compiled into print.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
+/* line 8, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -310,16 +310,16 @@ table {
  * Collect all of your extendable classes, ids and silent extendables.
  */
 /* line 18, ../sass/base/logic/_extendables.scss */
-.clearfix, header, footer, .main {
+.clearfix, header, .center, footer, .main {
   *zoom: 1;
 }
 /* line 21, ../sass/base/logic/_extendables.scss */
-.clearfix:before, header:before, footer:before, .main:before, .clearfix:after, header:after, footer:after, .main:after {
+.clearfix:before, header:before, .center:before, footer:before, .main:before, .clearfix:after, header:after, .center:after, footer:after, .main:after {
   display: table;
   content: "";
 }
 /* line 25, ../sass/base/logic/_extendables.scss */
-.clearfix:after, header:after, footer:after, .main:after {
+.clearfix:after, header:after, .center:after, footer:after, .main:after {
   clear: both;
 }
 
@@ -360,7 +360,7 @@ table {
   padding-left: 0.588em;
   padding-right: 0.588em;
 }
-/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -377,7 +377,7 @@ table {
     display: block;
   }
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 .primary_navigation {
   display: block;
 }
@@ -517,7 +517,7 @@ table {
     clear: both;
   }
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer {
   clear: both;
 }

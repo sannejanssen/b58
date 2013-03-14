@@ -91,6 +91,7 @@
       <?php if ($logo): ?>
         <figure class="logo">
           <?php if($is_front): ?>
+            <h1 class="element-invisible"><?php print $site_name; ?></h1>
             <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
           <?php else: ?>
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
@@ -98,21 +99,6 @@
             </a>
           <?php endif; ?>
         </figure>
-      <?php endif; ?>
-
-      <?php if($site_name OR $site_slogan ): ?>
-        <hgroup class="site-name element-invisible">
-          <?php if($site_name): ?>
-            <?php if($is_front): ?>
-              <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
-            <?php else : ?>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-            <?php endif; ?>
-          <?php endif; ?>
-          <?php if ($site_slogan): ?>
-            <h2><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
-        </hgroup>
       <?php endif; ?>
 
       <?php if ($page['header']): ?>
@@ -131,58 +117,58 @@
       </div>
     </nav>
   <?php endif; ?>
-  
-  <div class="container">
-    <?php if ($page['sidebar_first']): ?>
-      <aside role="complementary" class="sidebar sidebar_first">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>
-    <?php endif; ?>
 
-    <div role="main" class="main">
+  <div class="center">
+    <div class="container">
+      <?php if ($page['sidebar_first']): ?>
+        <aside role="complementary" class="sidebar sidebar_first">
+          <?php print render($page['sidebar_first']); ?>
+        </aside>
+      <?php endif; ?>
+      <div role="main" class="main">
+        <?php if($page['highlighted']){ ?>
+          <?php print render($page['highlighted']); ?>
+        <?php } ?>
 
-      <?php if($page['highlighted']){ ?>
-        <?php print render($page['highlighted']); ?>
-      <?php } ?>
+        <?php if($messages){ ?>
+          <div class="drupal-messages">
+            <?php print $messages; ?>
+          </div>
+        <?php } ?>
 
-      <?php if($messages){ ?>
-        <div class="drupal-messages">
-          <?php print $messages; ?>
+        <?php if ($title && !$is_front): ?>
+          <?php print render($title_prefix); ?>
+            <h1><?php print $title; ?></h1>
+          <?php print render($title_suffix); ?>
+        <?php endif; ?>
+
+        <?php print $breadcrumb; ?>
+
+        <?php if ($action_links): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+
+        <?php if ($tabs['#primary']): ?>
+          <nav class="tabs"><?php print render($tabs); ?></nav>
+        <?php endif; ?>
+
+        <div id="content">
+          <?php print render($page['content']); ?>
         </div>
-      <?php } ?>
 
-      <?php if ($title && !$is_front): ?>
-        <?php print render($title_prefix); ?>
-          <h1><?php print $title; ?></h1>
-        <?php print render($title_suffix); ?>
+      </div><!--/main-->
+
+      <?php if ($page['sidebar_second']): ?>
+      <aside role="complementary" class="sidebar sidebar_second">
+        <?php print render($page['sidebar_second']); ?>
+      </aside>
       <?php endif; ?>
-
-      <?php print $breadcrumb; ?>
-
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-
-      <?php if ($tabs['#primary']): ?>
-        <nav class="tabs"><?php print render($tabs); ?></nav>
-      <?php endif; ?>
-
-      <div id="content">
-        <?php print render($page['content']); ?>
-      </div>
-
-    </div><!--/main-->
-
-    <?php if ($page['sidebar_second']): ?>
-    <aside role="complementary" class="sidebar sidebar_second">
-      <?php print render($page['sidebar_second']); ?>
-    </aside>
-    <?php endif; ?>
+    </div>
   </div>
-
   <footer role="contentinfo">
     <div class="container">
       <?php print render($page['footer']); ?>
+      <div style="width:100%; display: block"><p>copyright</p></div>
     </div>
   </footer>
 </div>

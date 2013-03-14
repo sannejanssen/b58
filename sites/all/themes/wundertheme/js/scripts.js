@@ -5,14 +5,14 @@
     attach: function(context) {
 
       // NAVIGATION MENU
-      var $navigation = $('header nav.main');
+      var $navigation = $('header nav.main-responsive');
 
       // Add extra menu item
-      $('header nav.main > .menu > li.first').before('<li id="navigationtoggle"><a href="#"></a></li>');
+      $('header nav.main-responsive > .menu > li.first').before('<li id="navigationtoggle"><a href="#"></a></li>');
       // $navigation.find('li.first').before('<li id="navigationtoggle"><a href="#"></a></li>');
 
       // verberg niet actieve elementen
-      $('header nav.main > .menu > li:not(#navigationtoggle)').hide();
+      $('header nav.main-responsive > .menu > li:not(#navigationtoggle)').hide();
 
       // disable first element
       $navigation.find('#navigationtoggle a').click(function(e) {
@@ -21,7 +21,7 @@
 
       // slideToggle
       $navigation.find('#navigationtoggle').click(function() {
-        $('header nav.main > .menu > li:not(#navigationtoggle)').slideToggle();
+        $('header nav.main-responsive > .menu > li:not(#navigationtoggle)').slideToggle();
 
         // $navigation.find("li:not(#navigationtoggle)").slideToggle();
       });

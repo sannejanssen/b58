@@ -4,14 +4,14 @@
  * This file is compiled into style.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
+/* line 8, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -310,16 +310,16 @@ table {
  * Collect all of your extendable classes, ids and silent extendables.
  */
 /* line 18, ../sass/base/logic/_extendables.scss */
-.clearfix, header, footer, .main {
+.clearfix, header, .center, footer, .main {
   *zoom: 1;
 }
 /* line 21, ../sass/base/logic/_extendables.scss */
-.clearfix:before, header:before, footer:before, .main:before, .clearfix:after, header:after, footer:after, .main:after {
+.clearfix:before, header:before, .center:before, footer:before, .main:before, .clearfix:after, header:after, .center:after, footer:after, .main:after {
   display: table;
   content: "";
 }
 /* line 25, ../sass/base/logic/_extendables.scss */
-.clearfix:after, header:after, footer:after, .main:after {
+.clearfix:after, header:after, .center:after, footer:after, .main:after {
   clear: both;
 }
 
@@ -377,7 +377,7 @@ table {
   padding-left: 0.588em;
   padding-right: 0.588em;
 }
-/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -630,12 +630,12 @@ h6 {
 
 /* Dropdown navigation */
 /* line 76, ../sass/base/_navigation.scss */
-div.main-nav {
+div.main-dropdown {
   display: none;
   /* iPad landscape */
 }
 /* line 79, ../sass/base/_navigation.scss */
-div.main-nav h2 {
+div.main-dropdown h2 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -643,14 +643,14 @@ div.main-nav h2 {
 }
 @media (min-width: 52.0625em) {
   /* line 76, ../sass/base/_navigation.scss */
-  div.main-nav {
+  div.main-dropdown {
     display: block;
   }
 }
 
 /* Responsive navigation */
 /* line 90, ../sass/base/_navigation.scss */
-nav.main {
+nav.main-responsive {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
@@ -658,35 +658,35 @@ nav.main {
   /* iPad landscape */
 }
 /* line 93, ../sass/base/_navigation.scss */
-nav.main h2 {
+nav.main-responsive h2 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
 /* line 97, ../sass/base/_navigation.scss */
-nav.main .menu li {
+nav.main-responsive .menu li {
   display: block;
   width: 100%;
   background-color: #3298d6;
   border-bottom: 1px solid #f0f0f0;
 }
 /* line 103, ../sass/base/_navigation.scss */
-nav.main .menu li li {
+nav.main-responsive .menu li li {
   background-color: #6fb7e2;
   border-bottom: none;
 }
 /* line 112, ../sass/base/_navigation.scss */
-nav.main .menu li a {
+nav.main-responsive .menu li a {
   color: #fff;
   display: block;
   width: 100%;
   padding: 15px 15px;
 }
 /* line 121, ../sass/base/_navigation.scss */
-nav.main #navigationtoggle {
+nav.main-responsive #navigationtoggle {
   background-image: url("../images/mobile-nav.png");
-  background-image: none, url("../images/mobile-nav.svg"), url("../img/mobile-nav.png");
+  background-image: none, url("../images/mobile-nav.svg"), url("../images/mobile-nav.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #3298d6;
@@ -701,47 +701,180 @@ nav.main #navigationtoggle {
 }
 @media (min-width: 52.0625em) {
   /* line 90, ../sass/base/_navigation.scss */
-  nav.main {
+  nav.main-responsive {
     /* Hide basic navigation & show dropdown */
     display: none;
   }
 }
 
+/* line 144, ../sass/base/_navigation.scss */
+footer {
+  color: #fff;
+}
+/* line 147, ../sass/base/_navigation.scss */
+footer .footer-nav {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  margin-top: 1em;
+  /* iPad portrait */
+  /* iPad landscape */
+}
+/* line 151, ../sass/base/_navigation.scss */
+footer .footer-nav h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* line 155, ../sass/base/_navigation.scss */
+footer .footer-nav .menu {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 160, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li {
+  width: 100%;
+  text-align: center;
+}
+/* line 164, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+/* line 170, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li.last {
+  display: none;
+}
+/* line 173, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 178, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li li {
+  width: 100%;
+}
+/* line 180, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li li a {
+  font-size: 14px;
+}
+/* line 184, ../sass/base/_navigation.scss */
+footer .footer-nav .menu li li.last {
+  display: block;
+}
+@media (min-width: 34em) {
+  /* line 194, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li {
+    width: 32.11715%;
+    float: left;
+    margin-right: 1.82427%;
+    text-align: left;
+  }
+  /* line 198, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li:nth-child(3) {
+    width: 32.11715%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 202, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li li {
+    width: 100%;
+  }
+  /* line 205, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li li:nth-child(3) {
+    width: 100%;
+  }
+}
+@media (min-width: 52.0625em) {
+  /* line 147, ../sass/base/_navigation.scss */
+  footer .footer-nav {
+    width: 49.08786%;
+    float: left;
+    margin-right: 1.82427%;
+  }
+  /* line 217, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li {
+    width: 30.85577%;
+    float: left;
+    margin-right: 3.71634%;
+  }
+  /* line 220, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li:nth-child(3) {
+    width: 30.85577%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 224, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li li {
+    width: 100%;
+  }
+  /* line 227, ../sass/base/_navigation.scss */
+  footer .footer-nav .menu li li:nth-child(3) {
+    width: 100%;
+  }
+}
+/* line 236, ../sass/base/_navigation.scss */
+footer .social-tools {
+  /* iPad landscape */
+}
+@media (min-width: 52.0625em) {
+  /* line 236, ../sass/base/_navigation.scss */
+  footer .social-tools {
+    width: 23.63179%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
 /*
 
-/* iPhone landscape */
-/* iPad portrait */
-/* iPad landscape */
+/* iPhone landscape
+@include at-breakpoint($breakpoint_1) {
+}
+/* iPad portrait
+@include at-breakpoint($breakpoint_2) {
+}
+/* iPad landscape
+@include at-breakpoint($breakpoint_3) {
+}
+*/
 /*
  * Design
  * 
  * Include all your design elements in this file.
  */
-/* iPhone landscape */
-/* iPad portrait */
-/* iPad landscape */
+/*
+/* iPhone landscape
+@include at-breakpoint($breakpoint_1) {
+}
+/* iPad portrait
+@include at-breakpoint($breakpoint_2) {
+}
+/* iPad landscape
+@include at-breakpoint($breakpoint_3) {
+}
+*/
 /* Logo */
-/* line 19, ../sass/base/_design.scss */
+/* line 21, ../sass/base/_design.scss */
 header {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-  margin-bottom: 1em;
   /* iPad landscape */
 }
-/* line 23, ../sass/base/_design.scss */
+/* line 22, ../sass/base/_design.scss */
 header .logo {
   width: 83.02929%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 25, ../sass/base/_design.scss */
+/* line 24, ../sass/base/_design.scss */
 header .logo img {
   float: left;
 }
-/* line 29, ../sass/base/_design.scss */
+/* line 28, ../sass/base/_design.scss */
 header .header {
   width: 100%;
   float: left;
@@ -750,13 +883,13 @@ header .header {
   position: relative;
 }
 @media (min-width: 52.0625em) {
-  /* line 36, ../sass/base/_design.scss */
+  /* line 35, ../sass/base/_design.scss */
   header .logo {
     width: 40.60251%;
     float: left;
     margin-right: 1.82427%;
   }
-  /* line 39, ../sass/base/_design.scss */
+  /* line 38, ../sass/base/_design.scss */
   header .header {
     width: 57.57322%;
     float: right;
@@ -766,23 +899,23 @@ header .header {
 }
 
 /* Base link settings */
-/* line 48, ../sass/base/_design.scss */
+/* line 47, ../sass/base/_design.scss */
 a {
   color: #444444;
   text-decoration: none;
 }
-/* line 54, ../sass/base/_design.scss */
+/* line 53, ../sass/base/_design.scss */
 a:hover, a:focus
 a:active {
   color: #3298d6;
   text-decoration: underline;
 }
 
-/* line 60, ../sass/base/_design.scss */
+/* line 59, ../sass/base/_design.scss */
 html {
   color: #333333;
 }
-/* line 64, ../sass/base/_design.scss */
+/* line 63, ../sass/base/_design.scss */
 html ::selection,
 html ::-moz-selection {
   color: #cccccc;
@@ -790,9 +923,31 @@ html ::-moz-selection {
 }
 
 /* Base settings */
-/* line 71, ../sass/base/_design.scss */
+/* line 70, ../sass/base/_design.scss */
 h1, h2, h3, h4 {
   margin-top: 0;
+}
+
+/* line 74, ../sass/base/_design.scss */
+body {
+  background-color: #252525;
+}
+
+/* line 79, ../sass/base/_design.scss */
+header,
+.center {
+  background-color: #fff;
+}
+
+/* line 83, ../sass/base/_design.scss */
+.center {
+  padding: 1em 0;
+  min-height: 200px;
+}
+
+/* line 88, ../sass/base/_design.scss */
+footer {
+  border-top: 1px solid #7c7c7c;
 }
 
 /* ---------- Import styles ---------- */
