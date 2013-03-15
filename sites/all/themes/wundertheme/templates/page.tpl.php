@@ -168,7 +168,6 @@
   <footer role="contentinfo">
     <div class="container">
       <?php print render($page['footer']); ?>
-      <div style="width:100%; display: block"><p>copyright</p></div>
     </div>
   </footer>
 </div>
