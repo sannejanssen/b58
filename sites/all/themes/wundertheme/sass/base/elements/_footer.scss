@@ -1,0 +1,206 @@
+/**
+ * Footer
+ *
+ * Table of contents
+ * --------------------
+ * 1. Design
+ * 2. Layout
+ *
+ */
+
+/* DESIGN */
+footer {
+  padding-top: 1em;
+
+  .footer-nav {
+    h2 {
+      @include element-invisible;
+    }
+
+    .menu {
+      @extend %menu;
+
+      /* First level */
+      li.expanded {
+
+        a {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.412em; /* 24px on a 17px base font size */
+          line-height: 1.765em; /* 30px on a 17px base font size */
+          font-weight: 300;
+
+          /* iPad portrait */
+          @include at-breakpoint($breakpoint_2) {
+            font-size: 1.294em; /* 22px on a 17px base font size */
+            line-height: 1.529em; /* 26px on a 17px base font size */
+          }
+        }
+
+        ul {
+          margin-top: 0.882em; /* 15px on a 17px base font size */
+          margin-bottom: 1.176em; /* 20px on a 17px base font size */
+        }
+
+       /* Second level */
+        li.leaf {
+          margin-bottom: 0.118em; /* 2px on a 17px base font size */
+
+          a {
+            text-transform: none;
+            font-size: 1.059em; /* 18px on a 17px base font size */
+            line-height: 1.412em; /* 24px on a 17px base font size */
+
+            /* iPad portrait */
+            @include at-breakpoint($breakpoint_2) {
+              font-size: 0.941em; /* 16px on a 17px base font size */
+            }
+          }
+        }
+      }
+    }
+  } /* End footer-nav */
+
+  .social-tools {
+    margin-bottom: 1em;
+    color: #fff;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.412em; /* 24px on a 17px base font size */
+      line-height: 1.765em; /* 30px on a 17px base font size */
+      font-weight: 300;
+      margin-bottom: 1em; /* 17px on a 17px base font size */
+
+      /* iPad portrait */
+      @include at-breakpoint($breakpoint_2) {
+        font-size: 1.294em; /* 22px on a 17px base font size */
+        line-height: 1.529em; /* 26px on a 17px base font size */
+      }
+
+      /* iPad landscape */
+      @include at-breakpoint($breakpoint_3) {
+        text-align: right;
+      }
+
+    }
+
+    ul {
+      @extend %menu;
+
+      br {
+        display: none;
+      }
+
+      li {
+        /* iPad landscape */
+        @include at-breakpoint($breakpoint_3) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+/* LAYOUT */
+footer {
+  .footer-nav {
+    @include span-columns(12);
+
+    /* iPad landscape */
+    @include at-breakpoint($breakpoint_3) {
+      @include span-columns(6,12);
+    }
+
+    ul {
+      @include span-columns(12);
+
+      /* First level */
+      li.expanded {
+        @include span-columns(12);
+
+        &.last {
+          display: none;
+        }
+
+        /* iPhone landscape */
+        @include at-breakpoint($breakpoint_1) {
+          @include span-columns(6,12);
+
+          &:nth-child(2n+2) {
+            @include span-columns(6 omega,12);
+          }
+        }
+
+        /* iPad portrait */
+        @include at-breakpoint($breakpoint_2) {
+          @include span-columns(4,12);
+
+          &:nth-child(2n+2) {
+            @include span-columns(4,12);
+          }
+          &:nth-child(3n+3) {
+            @include span-columns(4 omega,12);
+          }
+        }
+
+        /* iPad landscape */
+        @include at-breakpoint($breakpoint_3) {
+          @include span-columns(2,6);
+
+          &:nth-child(2n+2) {
+            @include span-columns(2,6);
+          }
+          &:nth-child(3n+3) {
+            @include span-columns(2 omega,6);
+          }
+        }
+
+        li.leaf {
+          /* Second level */
+          @include span-columns(12);
+        }
+      }
+    }
+  }
+
+  .social-tools {
+    @include span-columns(12);
+
+    ul {
+      @include span-columns(12);
+
+      li {
+        @include span-columns(2,12);
+
+        /* iPone landscape */
+        @include at-breakpoint($breakpoint_1) {
+          @include span-columns(2,18);
+        }
+
+        /* iPad portrait */
+        @include at-breakpoint($breakpoint_2) {
+          @include span-columns(2,28);
+        }
+      }
+    }
+
+    /* iPad landscape */
+    @include at-breakpoint($breakpoint_3) {
+      @include span-columns(3 omega, 12);
+
+      ul {
+        @include span-columns(10 omega, 12);
+
+        li {
+          @include span-columns(2, 8);
+
+          &.last {
+            @include span-columns(2 omega, 8);
+          }
+
+        }
+      }
+    }
+  }
+}

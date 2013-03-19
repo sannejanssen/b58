@@ -1,0 +1,108 @@
+/**
+ * Main navigation
+ *
+ * Table of contents
+ * --------------------
+ * 1. Design
+ * 2. Layout
+ *
+ */
+
+
+
+/* DESIGN */
+
+/* Dropdown navigation */
+div.main-dropdown {
+}
+
+/* Responsive navigation */
+nav.main-responsive {
+  .menu {
+    li {
+
+      /*
+      background-color: $blue;
+      border-bottom: 1px solid #f0f0f0;
+      */
+
+      li {
+        /*
+        background-color: #6fb7e2;
+        border-bottom: none;
+        */
+      }
+
+      a {
+        /*
+        color: #fff;
+        padding: 15px 15px;
+        */
+      }
+    }
+
+    #navigationtoggle {
+      /*
+      background-image:  url('../images/mobile-nav.png');
+      background-image:  none,url('../images/mobile-nav.svg'), url('../images/mobile-nav.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $blue;
+      cursor: pointer;
+      border-bottom: 1px solid $blue;
+      */
+    }
+  }
+}
+
+/* LAYOUT */
+
+/* Dropdown navigation */
+div.main-dropdown {
+  display: none;
+
+  h2 {
+    @include element-invisible;
+  }
+
+  /* iPad landscape */
+  @include at-breakpoint($breakpoint_3) {
+    display: block;
+  }
+}
+
+/* Responsive navigation */
+nav.main-responsive {
+  @include span-columns(12);
+
+  h2 {
+    @include element-invisible;
+  }
+
+  .menu {
+    li {
+      display: block;
+      width: 100%;
+
+      a {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  #navigationtoggle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+
+  /* iPad landscape */
+  @include at-breakpoint($breakpoint_3) {
+    /* Hide basic navigation & show dropdown */
+    display: none;
+  }
+}

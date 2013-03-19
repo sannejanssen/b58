@@ -4,6 +4,11 @@
  * Include all your design elements in this file.
  */
 
+/* Import base elements */
+@import 'elements/language';
+@import 'elements/main-navigation';
+@import 'elements/footer';
+
 /*
 /* iPhone landscape
 @include at-breakpoint($breakpoint_1) {
