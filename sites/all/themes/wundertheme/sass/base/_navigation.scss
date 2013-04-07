@@ -204,129 +204,15 @@ footer {
           /* Second level */
           @include span-columns(12);
           background-color: grey;
-        }
-
-
-
-
-
-
-
-      }
-
-
-
-
-
-
-
-    }
-
-
-
-  }
-
-
-
-/*
-  padding-top: 2em;
-  color: #fff;
-
-  .footer-nav {
-    
-    margin-top: 1em;
-
-    h2 {
-      @include element-invisible;
-    }
-
-    .menu {
-      list-style: none;
-      list-style-image: none;
-      list-style-type: none;
-
-      li {
-        width: 100%;
-        text-align: center;
-
-        a {
-          color: #fff;
-          text-transform: uppercase;
-          font-size: 1.294em; /* 22px on a 17px base font size 
-          font-size: 28px;
-          font-weight: 300;
-          text-transform: uppercase;
-        }
-
-        &.last {
-          display: none;
-        }
-        ul {
-          @include span-columns(12 omega);
-          margin-top: 1em;
-          margin-bottom: 2em;
-        }
-
-        li {
-          width: 100%;
-          margin-bottom: 5px;
-          a {
-            text-transform: none;
-            font-size: 20px;
-          }
-
-          &.last {
-            display: block;
-          }
-        }
-      }
-    }
-
-    /* iPad portrait
-    @include at-breakpoint($breakpoint_2) {
-      .menu {
-        li {
-          @include span-columns(4,12);
-          text-align: left;
-
-          &:nth-child(3) {
-            @include span-columns(4 omega,12);
-          }
-
-          li {
-            width: 100%;
-
-            &:nth-child(3) {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
-    /* iPad landscape
-    @include at-breakpoint($breakpoint_3) {
-      @include span-columns(6,12);
-      .menu {
-        li {
-          @include span-columns(2,6);
-
-          &:nth-child(3) {
-            @include span-columns(2 omega,6);
-          }
-
-          li {
-            width: 100%;
-
-            &:nth-child(3) {
-              width: 100%;
-            }
-          }
+          color: orange;
         }
       }
     }
   }
-  */
+
+
+
+
 
   .social-tools {
     /* iPad landscape */

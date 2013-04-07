@@ -17,11 +17,11 @@ footer {
       @include element-invisible;
     }
 
-    .menu {
+    > .menu {
       @extend %menu;
 
       /* First level */
-      li.expanded {
+      > li {
 
         a {
           color: #fff;
@@ -112,11 +112,11 @@ footer {
       @include span-columns(6,12);
     }
 
-    ul {
+    > ul {
       @include span-columns(12);
 
       /* First level */
-      li.expanded {
+      > li {
         @include span-columns(12);
 
         &.last {
@@ -154,6 +154,10 @@ footer {
           &:nth-child(3n+3) {
             @include span-columns(2 omega,6);
           }
+        }
+
+        ul {
+          @include span-columns(12);
         }
 
         li.leaf {
