@@ -11,10 +11,9 @@
 
 
 /* DESIGN */
-.language {
 
 
-/* Language switcher
+/* Language switcher */
 .language {
   
   margin-bottom: 0.5em;
@@ -44,8 +43,8 @@
     }
   }
 
-  /* iPad landscape
-  @include at-breakpoint($breakpoint_3) {
+  /* iPad landscape */
+  @include at-breakpoint($breakpoint_2) {
     ul {
       float: right;
       background-color: $light-grey;
@@ -81,8 +80,6 @@
     }
   }
 }
-*/
-}
 
 /* LAYOUT */
 .language {
@@ -100,10 +97,6 @@
   @include at-breakpoint($breakpoint_2) {
     ul {
       float: right;
-
-      li {
-        float: none;
-      }
     }
   }
 }

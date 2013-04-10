@@ -324,10 +324,20 @@ table {
 }
 
 /* line 100, ../sass/base/logic/_extendables.scss */
-footer .footer-nav > .menu, footer .social-tools ul {
+.language ul, footer .footer-nav > .menu, footer .social-tools ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* line 108, ../sass/base/logic/_extendables.scss */
+.language ul {
+  font-size: 0;
+}
+/* line 111, ../sass/base/logic/_extendables.scss */
+.language ul li {
+  display: inline-block;
+  font-size: 16px;
 }
 
 /**
@@ -559,80 +569,64 @@ h6 {
  *
  */
 /* DESIGN */
-/* line 14, ../sass/base/elements/_language.scss */
+/* Language switcher */
+/* line 17, ../sass/base/elements/_language.scss */
 .language {
-  /* Language switcher
-.language {
-  
   margin-bottom: 0.5em;
-
-  ul {
-    @extend %horizontal-menu;
-  }
-
-  li {
-    
-
-    text-align: center;
-    background-color: $light-grey;
-
-    
-    a {
-      display: block;
-      padding: 5px 0 10px;
-      color: #575756;
-      opacity: 0.7;
-      
-      &.active,
-      &:hover,
-      &:focus {
-        color: #000;
-      }
-    }
-  }
-
-  /* iPad landscape
-  @include at-breakpoint($breakpoint_3) {
-    ul {
-      float: right;
-      background-color: $light-grey;
-      padding: 3px 20px 6px;
-      color: #575756;
-      font-size: 0.706em;
-
-      li {
-        background: none;
-        margin: 0;
-
-        &::after {
-          content: "|";
-          margin: 0 5px 8px;
-          opacity: 0.7;
-          font-size: 12px;
-        }
-
-        &.last {
-          &::after {
-            content: "";
-            margin-right: 0;
-
-          }
-        }
-
-        a {
-          padding: 5px 0px;
-          font-size: 0.706em;
-          display: inline;
-        }
-      }
-    }
-  }
+  /* iPad landscape */
 }
-*/
+/* line 25, ../sass/base/elements/_language.scss */
+.language li {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+/* line 32, ../sass/base/elements/_language.scss */
+.language li a {
+  display: block;
+  padding: 5px 0 10px;
+  color: #575756;
+  opacity: 0.7;
+}
+/* line 40, ../sass/base/elements/_language.scss */
+.language li a.active, .language li a:hover, .language li a:focus {
+  color: #000;
+}
+@media (min-width: 34em) {
+  /* line 48, ../sass/base/elements/_language.scss */
+  .language ul {
+    float: right;
+    background-color: #f0f0f0;
+    padding: 3px 20px 6px;
+    color: #575756;
+    font-size: 0.706em;
+  }
+  /* line 55, ../sass/base/elements/_language.scss */
+  .language ul li {
+    background: none;
+    margin: 0;
+  }
+  /* line 59, ../sass/base/elements/_language.scss */
+  .language ul li::after {
+    content: "|";
+    margin: 0 5px 8px;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  /* line 67, ../sass/base/elements/_language.scss */
+  .language ul li.last::after {
+    content: "";
+    margin-right: 0;
+  }
+  /* line 74, ../sass/base/elements/_language.scss */
+  .language ul li a {
+    padding: 5px 0px;
+    font-size: 0.706em;
+    display: inline;
+  }
 }
 
 /* LAYOUT */
-/* line 88, ../sass/base/elements/_language.scss */
+/* line 85, ../sass/base/elements/_language.scss */
 .language {
   width: 100%;
   float: left;
@@ -640,14 +634,14 @@ h6 {
   display: inline;
   /* iPad landscape */
 }
-/* line 91, ../sass/base/elements/_language.scss */
+/* line 88, ../sass/base/elements/_language.scss */
 .language li {
   width: 32.11715%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 94, ../sass/base/elements/_language.scss */
+/* line 91, ../sass/base/elements/_language.scss */
 .language li.last {
   width: 32.11715%;
   float: right;
@@ -656,13 +650,9 @@ h6 {
   display: inline;
 }
 @media (min-width: 34em) {
-  /* line 101, ../sass/base/elements/_language.scss */
+  /* line 98, ../sass/base/elements/_language.scss */
   .language ul {
     float: right;
-  }
-  /* line 104, ../sass/base/elements/_language.scss */
-  .language ul li {
-    float: none;
   }
 }
 
