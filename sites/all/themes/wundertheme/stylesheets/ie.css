@@ -4,14 +4,14 @@
  * This file is compiled into ie.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
+/* line 8, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -367,7 +367,7 @@ footer .footer-nav > .menu, footer .social-tools ul {
   padding-left: 0.588em;
   padding-right: 0.588em;
 }
-/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -378,7 +378,7 @@ footer .footer-nav > .menu, footer .social-tools ul {
 .primary_navigation {
   display: none;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 .primary_navigation {
   display: block;
 }
@@ -451,7 +451,7 @@ footer .footer-nav > .menu, footer .social-tools ul {
   display: inline;
 }
 
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer {
   clear: both;
 }
@@ -687,7 +687,7 @@ div.main-dropdown h2 {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 div.main-dropdown {
   display: block;
 }
@@ -727,77 +727,112 @@ nav.main-responsive #navigationtoggle {
   top: -50px;
   right: 0;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 nav.main-responsive {
   /* Hide basic navigation & show dropdown */
   display: none;
 }
 
-/* line 78, ../sass/base/elements/_main-navigation.scss */
-header .container {
-  background-color: orange;
-}
-
 /* DESIGN */
 /* Dropdown navigation */
-/* line 102, ../sass/base/elements/_main-navigation.scss */
+/* line 68, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li {
   margin-right: 2px;
 }
-/* line 105, ../sass/base/elements/_main-navigation.scss */
+/* line 71, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li a {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.294em;
+  /* 22px on a 17px base font size */
+  font-size: 20px;
   background-color: #3298d6;
   color: white;
-  padding: 15px;
+  padding: 0.882em;
+  /* 15px on a 17px base font size */
 }
-/* line 113, ../sass/base/elements/_main-navigation.scss */
-div.main-dropdown > ul > li a span {
-  display: none;
+/* line 83, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li a:hover, div.main-dropdown > ul > li a:focus, div.main-dropdown > ul > li a.active {
+  text-decoration: none;
+  background-color: #878e98;
 }
-/* line 119, ../sass/base/elements/_main-navigation.scss */
+/* line 89, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li.active-trail > a {
+  background-color: #878e98;
+}
+/* line 94, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li.last a {
   background-color: white;
   border: 1px solid #3298d6;
   color: #3298d6;
   text-transform: none;
-  font-size: 18px;
-  padding: 16px 15px;
+  font-size: 1.059em;
+  /* 18px on a 17px base font size */
+  padding: 0.941em 0.882em;
+  /* 16px 15px on a 17px base font size */
 }
-/* line 131, ../sass/base/elements/_main-navigation.scss */
+/* line 105, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li {
-  background-color: orange;
-  padding: 5px;
+  background-color: #3298d6;
+  padding: 0 0.294em;
+  /* 5px on a 17px base font size */
 }
-/* line 139, ../sass/base/elements/_main-navigation.scss */
+/* line 109, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li ul li.first {
+  padding-top: 0.294em;
+  /* 5px on a 17px base font size */
+}
+/* line 112, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li ul li.last {
+  padding-bottom: 0.294em;
+  /* 5px on a 17px base font size */
+}
+/* line 117, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li ul li a {
+  text-transform: none;
+  font-size: 0.882em;
+  /* 15px on a 17px base font size */
+  padding: 0.588em;
+  /* 10px on a 17px base font size */
+}
+/* line 124, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li ul li a:hover, div.main-dropdown > ul > li ul li a:focus, div.main-dropdown > ul > li ul li a.active {
+  background-color: white;
+  color: #3298d6;
+}
+/* line 134, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown .sf-menu.sf-horizontal.sf-shadow ul {
-  padding-top: 12px !important;
+  padding-top: 0.706em !important;
+  /* 12px on a 17px base font size */
   background-image: url("../images/dropdown-arrow.png");
   background-repeat: no-repeat;
-  background-position: 30px 0px;
+  background-position: 1.765em 0;
+  /* 30px on a 17px base font size */
+  margin-top: 1.176em;
+  /* 20px on a 17px base font size */
 }
 
 /* Responsive navigation */
-/* line 165, ../sass/base/elements/_main-navigation.scss */
+/* line 146, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li {
   background-color: #3298d6;
 }
-/* line 168, ../sass/base/elements/_main-navigation.scss */
+/* line 149, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li a {
   color: #fff;
-  padding: 15px 15px;
+  padding: 0.882em;
+  /* 15px on a 17px base font size */
 }
-/* line 173, ../sass/base/elements/_main-navigation.scss */
+/* line 154, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li li {
   background-color: #6fb7e2;
 }
-/* line 176, ../sass/base/elements/_main-navigation.scss */
+/* line 157, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li li a {
-  padding-left: 25px;
+  padding-left: 1.471em;
+  /* 25px on a 17px base font size */
 }
-/* line 182, ../sass/base/elements/_main-navigation.scss */
+/* line 163, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu #navigationtoggle {
   background-image: url("../images/mobile-nav.png");
   background-image: none, url("../images/mobile-nav.svg"), url("../images/mobile-nav.png");
@@ -848,7 +883,7 @@ footer .footer-nav > .menu > li a {
   font-weight: 300;
   /* iPad portrait */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > .menu > li a {
   font-size: 1.294em;
   /* 22px on a 17px base font size */
@@ -876,7 +911,7 @@ footer .footer-nav > .menu > li li.leaf a {
   /* 24px on a 17px base font size */
   /* iPad portrait */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > .menu > li li.leaf a {
   font-size: 0.941em;
   /* 16px on a 17px base font size */
@@ -899,14 +934,14 @@ footer .social-tools h2 {
   /* iPad portrait */
   /* iPad landscape */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools h2 {
   font-size: 1.294em;
   /* 22px on a 17px base font size */
   line-height: 1.529em;
   /* 26px on a 17px base font size */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools h2 {
   text-align: right;
 }
@@ -918,7 +953,7 @@ footer .social-tools ul br {
 footer .social-tools ul li {
   /* iPad landscape */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools ul li {
   text-align: right;
 }
@@ -932,7 +967,7 @@ footer .footer-nav {
   display: inline;
   /* iPad landscape */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav {
   width: 49.08786%;
   float: left;
@@ -961,7 +996,7 @@ footer .footer-nav > ul > li {
 footer .footer-nav > ul > li.last {
   display: none;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > ul > li {
   width: 49.08786%;
   float: left;
@@ -976,7 +1011,7 @@ footer .footer-nav > ul > li.last {
   #margin-left: -1.176em;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > ul > li {
   width: 32.11715%;
   float: left;
@@ -998,7 +1033,7 @@ footer .footer-nav > ul > li.last {
   #margin-left: -1.176em;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > ul > li {
   width: 30.85577%;
   float: left;
@@ -1059,21 +1094,21 @@ footer .social-tools ul li {
   /* iPone landscape */
   /* iPad portrait */
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools ul li {
   width: 10.03659%;
   float: left;
   margin-right: 1.20883%;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools ul li {
   width: 6.42436%;
   float: left;
   margin-right: 0.77377%;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 105, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools {
   width: 23.63179%;
   float: right;
