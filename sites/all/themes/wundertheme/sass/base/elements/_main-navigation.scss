@@ -21,6 +21,9 @@ div.main-dropdown {
   /* iPad landscape */
   @include at-breakpoint($breakpoint_3) {
     display: block;
+    ul {
+      float: right;
+    }
   }
 }
 
@@ -65,18 +68,19 @@ nav.main-responsive {
 /* Dropdown navigation */
 div.main-dropdown {
   > ul {
+    margin-top: 85px;
+
     > li {
-      margin-right: 2px;
+      margin-left: 2px;
       
       a {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 1.294em; /* 22px on a 17px base font size */
-        font-size: 20px;
 
         background-color: $blue;
         color: $white;
-        padding: 0.882em; /* 15px on a 17px base font size */
+        padding: 0.682em; /* 15px on a 22px base font size */
 
         &:hover,
         &:focus,
@@ -97,7 +101,7 @@ div.main-dropdown {
           color: $blue;
           text-transform: none;
           font-size: 1.059em; /* 18px on a 17px base font size */
-          padding: 0.941em 0.882em; /* 16px 15px on a 17px base font size */
+          padding: 0.889em 15px; /* 16px 15px on a 18px base font size */
         }
       }
 
@@ -116,8 +120,8 @@ div.main-dropdown {
 
           a {
             text-transform: none;
-            font-size: 0.882em; /* 15px on a 17px base font size */
-            padding: 0.588em; /* 10px on a 17px base font size */
+            font-size: 0.941em; /* 16px on a 17px base font size */
+            padding: 0.588em; /* 10px on a 16px base font size */
 
             &:hover,
             &:focus,

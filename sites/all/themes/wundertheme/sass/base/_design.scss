@@ -24,6 +24,7 @@
 
 /* Logo */
 header {
+  padding-bottom: 1.176em; /* 20px on a 17px base font size */
   .logo {
     @include span-columns(10, 12);
     img {
@@ -39,10 +40,22 @@ header {
   @include at-breakpoint($breakpoint_3) {
     .logo {
       @include span-columns(5, 12);
+      
     }
     .header {
       @include span-columns(7 omega, 12);
       position: relative;
+    }
+  }
+
+  @include breakpoint(73em) {
+    .logo {
+      margin-left: -50px;
+
+      img {
+        max-width: 500px;
+        width: 500px;
+      }
     }
   }
 }

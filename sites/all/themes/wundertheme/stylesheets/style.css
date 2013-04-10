@@ -4,14 +4,14 @@
  * This file is compiled into style.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
+/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -377,7 +377,7 @@ table {
   padding-left: 0.588em;
   padding-right: 0.588em;
 }
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -580,19 +580,19 @@ h6 {
   text-align: center;
   background-color: #f0f0f0;
 }
-/* line 32, ../sass/base/elements/_language.scss */
+/* line 29, ../sass/base/elements/_language.scss */
 .language li a {
   display: block;
   padding: 5px 0 10px;
   color: #575756;
   opacity: 0.7;
 }
-/* line 40, ../sass/base/elements/_language.scss */
+/* line 37, ../sass/base/elements/_language.scss */
 .language li a.active, .language li a:hover, .language li a:focus {
   color: #000;
 }
 @media (min-width: 34em) {
-  /* line 48, ../sass/base/elements/_language.scss */
+  /* line 45, ../sass/base/elements/_language.scss */
   .language ul {
     float: right;
     background-color: #f0f0f0;
@@ -600,24 +600,24 @@ h6 {
     color: #575756;
     font-size: 0.706em;
   }
-  /* line 55, ../sass/base/elements/_language.scss */
+  /* line 52, ../sass/base/elements/_language.scss */
   .language ul li {
     background: none;
     margin: 0;
   }
-  /* line 59, ../sass/base/elements/_language.scss */
+  /* line 56, ../sass/base/elements/_language.scss */
   .language ul li::after {
     content: "|";
     margin: 0 5px 8px;
     opacity: 0.7;
     font-size: 12px;
   }
-  /* line 67, ../sass/base/elements/_language.scss */
+  /* line 64, ../sass/base/elements/_language.scss */
   .language ul li.last::after {
     content: "";
     margin-right: 0;
   }
-  /* line 74, ../sass/base/elements/_language.scss */
+  /* line 70, ../sass/base/elements/_language.scss */
   .language ul li a {
     padding: 5px 0px;
     font-size: 0.706em;
@@ -626,7 +626,7 @@ h6 {
 }
 
 /* LAYOUT */
-/* line 85, ../sass/base/elements/_language.scss */
+/* line 81, ../sass/base/elements/_language.scss */
 .language {
   width: 100%;
   float: left;
@@ -634,14 +634,14 @@ h6 {
   display: inline;
   /* iPad landscape */
 }
-/* line 88, ../sass/base/elements/_language.scss */
+/* line 84, ../sass/base/elements/_language.scss */
 .language li {
   width: 32.11715%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 91, ../sass/base/elements/_language.scss */
+/* line 87, ../sass/base/elements/_language.scss */
 .language li.last {
   width: 32.11715%;
   float: right;
@@ -650,7 +650,7 @@ h6 {
   display: inline;
 }
 @media (min-width: 34em) {
-  /* line 98, ../sass/base/elements/_language.scss */
+  /* line 94, ../sass/base/elements/_language.scss */
   .language ul {
     float: right;
   }
@@ -684,10 +684,14 @@ div.main-dropdown h2 {
   div.main-dropdown {
     display: block;
   }
+  /* line 24, ../sass/base/elements/_main-navigation.scss */
+  div.main-dropdown ul {
+    float: right;
+  }
 }
 
 /* Responsive navigation */
-/* line 28, ../sass/base/elements/_main-navigation.scss */
+/* line 31, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive {
   width: 100%;
   float: left;
@@ -695,24 +699,24 @@ nav.main-responsive {
   display: inline;
   /* iPad landscape */
 }
-/* line 31, ../sass/base/elements/_main-navigation.scss */
+/* line 34, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive h2 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 36, ../sass/base/elements/_main-navigation.scss */
+/* line 39, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li {
   display: block;
   width: 100%;
 }
-/* line 40, ../sass/base/elements/_main-navigation.scss */
+/* line 43, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li a {
   display: block;
   width: 100%;
 }
-/* line 47, ../sass/base/elements/_main-navigation.scss */
+/* line 50, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive #navigationtoggle {
   display: block;
   width: 50px;
@@ -722,7 +726,7 @@ nav.main-responsive #navigationtoggle {
   right: 0;
 }
 @media (min-width: 52.0625em) {
-  /* line 28, ../sass/base/elements/_main-navigation.scss */
+  /* line 31, ../sass/base/elements/_main-navigation.scss */
   nav.main-responsive {
     /* Hide basic navigation & show dropdown */
     display: none;
@@ -731,32 +735,35 @@ nav.main-responsive #navigationtoggle {
 
 /* DESIGN */
 /* Dropdown navigation */
-/* line 68, ../sass/base/elements/_main-navigation.scss */
-div.main-dropdown > ul > li {
-  margin-right: 2px;
+/* line 70, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul {
+  margin-top: 85px;
 }
-/* line 71, ../sass/base/elements/_main-navigation.scss */
+/* line 73, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li {
+  margin-left: 2px;
+}
+/* line 76, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li a {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.294em;
   /* 22px on a 17px base font size */
-  font-size: 20px;
   background-color: #3298d6;
   color: white;
-  padding: 0.882em;
-  /* 15px on a 17px base font size */
+  padding: 0.682em;
+  /* 15px on a 22px base font size */
 }
-/* line 83, ../sass/base/elements/_main-navigation.scss */
+/* line 87, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li a:hover, div.main-dropdown > ul > li a:focus, div.main-dropdown > ul > li a.active {
   text-decoration: none;
   background-color: #878e98;
 }
-/* line 89, ../sass/base/elements/_main-navigation.scss */
+/* line 93, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li.active-trail > a {
   background-color: #878e98;
 }
-/* line 94, ../sass/base/elements/_main-navigation.scss */
+/* line 98, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li.last a {
   background-color: white;
   border: 1px solid #3298d6;
@@ -764,39 +771,39 @@ div.main-dropdown > ul > li.last a {
   text-transform: none;
   font-size: 1.059em;
   /* 18px on a 17px base font size */
-  padding: 0.941em 0.882em;
-  /* 16px 15px on a 17px base font size */
+  padding: 0.889em 15px;
+  /* 16px 15px on a 18px base font size */
 }
-/* line 105, ../sass/base/elements/_main-navigation.scss */
+/* line 109, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li {
   background-color: #3298d6;
   padding: 0 0.294em;
   /* 5px on a 17px base font size */
 }
-/* line 109, ../sass/base/elements/_main-navigation.scss */
+/* line 113, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li.first {
   padding-top: 0.294em;
   /* 5px on a 17px base font size */
 }
-/* line 112, ../sass/base/elements/_main-navigation.scss */
+/* line 116, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li.last {
   padding-bottom: 0.294em;
   /* 5px on a 17px base font size */
 }
-/* line 117, ../sass/base/elements/_main-navigation.scss */
+/* line 121, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li a {
   text-transform: none;
-  font-size: 0.882em;
-  /* 15px on a 17px base font size */
+  font-size: 0.941em;
+  /* 16px on a 17px base font size */
   padding: 0.588em;
-  /* 10px on a 17px base font size */
+  /* 10px on a 16px base font size */
 }
-/* line 124, ../sass/base/elements/_main-navigation.scss */
+/* line 128, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li a:hover, div.main-dropdown > ul > li ul li a:focus, div.main-dropdown > ul > li ul li a.active {
   background-color: white;
   color: #3298d6;
 }
-/* line 134, ../sass/base/elements/_main-navigation.scss */
+/* line 138, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown .sf-menu.sf-horizontal.sf-shadow ul {
   padding-top: 0.706em !important;
   /* 12px on a 17px base font size */
@@ -809,26 +816,26 @@ div.main-dropdown .sf-menu.sf-horizontal.sf-shadow ul {
 }
 
 /* Responsive navigation */
-/* line 146, ../sass/base/elements/_main-navigation.scss */
+/* line 150, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li {
   background-color: #3298d6;
 }
-/* line 149, ../sass/base/elements/_main-navigation.scss */
+/* line 153, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li a {
   color: #fff;
   padding: 0.882em;
   /* 15px on a 17px base font size */
 }
-/* line 154, ../sass/base/elements/_main-navigation.scss */
+/* line 158, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li li {
   background-color: #6fb7e2;
 }
-/* line 157, ../sass/base/elements/_main-navigation.scss */
+/* line 161, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li li a {
   padding-left: 1.471em;
   /* 25px on a 17px base font size */
 }
-/* line 163, ../sass/base/elements/_main-navigation.scss */
+/* line 167, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu #navigationtoggle {
   background-image: url("../images/mobile-nav.png");
   background-image: none, url("../images/mobile-nav.svg"), url("../images/mobile-nav.png");
@@ -1153,20 +1160,22 @@ footer .social-tools ul li {
 /* Logo */
 /* line 26, ../sass/base/_design.scss */
 header {
+  padding-bottom: 1.176em;
+  /* 20px on a 17px base font size */
   /* iPad landscape */
 }
-/* line 27, ../sass/base/_design.scss */
+/* line 28, ../sass/base/_design.scss */
 header .logo {
   width: 83.02929%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 29, ../sass/base/_design.scss */
+/* line 30, ../sass/base/_design.scss */
 header .logo img {
   float: left;
 }
-/* line 33, ../sass/base/_design.scss */
+/* line 34, ../sass/base/_design.scss */
 header .header {
   width: 100%;
   float: left;
@@ -1175,13 +1184,13 @@ header .header {
   position: relative;
 }
 @media (min-width: 52.0625em) {
-  /* line 40, ../sass/base/_design.scss */
+  /* line 41, ../sass/base/_design.scss */
   header .logo {
     width: 40.60251%;
     float: left;
     margin-right: 1.82427%;
   }
-  /* line 43, ../sass/base/_design.scss */
+  /* line 45, ../sass/base/_design.scss */
   header .header {
     width: 57.57322%;
     float: right;
@@ -1189,25 +1198,36 @@ header .header {
     position: relative;
   }
 }
+@media (min-width: 73em) {
+  /* line 52, ../sass/base/_design.scss */
+  header .logo {
+    margin-left: -50px;
+  }
+  /* line 55, ../sass/base/_design.scss */
+  header .logo img {
+    max-width: 500px;
+    width: 500px;
+  }
+}
 
 /* Base link settings */
-/* line 52, ../sass/base/_design.scss */
+/* line 65, ../sass/base/_design.scss */
 a {
   color: #444444;
   text-decoration: none;
 }
-/* line 58, ../sass/base/_design.scss */
+/* line 71, ../sass/base/_design.scss */
 a:hover, a:focus
 a:active {
   color: #3298d6;
   text-decoration: underline;
 }
 
-/* line 64, ../sass/base/_design.scss */
+/* line 77, ../sass/base/_design.scss */
 html {
   color: #333333;
 }
-/* line 68, ../sass/base/_design.scss */
+/* line 81, ../sass/base/_design.scss */
 html ::selection,
 html ::-moz-selection {
   color: #cccccc;
@@ -1215,29 +1235,29 @@ html ::-moz-selection {
 }
 
 /* Base settings */
-/* line 75, ../sass/base/_design.scss */
+/* line 88, ../sass/base/_design.scss */
 h1, h2, h3, h4 {
   margin-top: 0;
 }
 
-/* line 79, ../sass/base/_design.scss */
+/* line 92, ../sass/base/_design.scss */
 body {
   background-color: #252525;
 }
 
-/* line 84, ../sass/base/_design.scss */
+/* line 97, ../sass/base/_design.scss */
 header,
 .center {
   background-color: #fff;
 }
 
-/* line 88, ../sass/base/_design.scss */
+/* line 101, ../sass/base/_design.scss */
 .center {
   padding: 1em 0;
   min-height: 200px;
 }
 
-/* line 93, ../sass/base/_design.scss */
+/* line 106, ../sass/base/_design.scss */
 footer {
   border-top: 1px solid #7c7c7c;
 }

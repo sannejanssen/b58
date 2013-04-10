@@ -23,12 +23,9 @@
   }
 
   li {
-    
-
     text-align: center;
     background-color: $light-grey;
 
-    
     a {
       display: block;
       padding: 5px 0 10px;
@@ -67,7 +64,6 @@
           &::after {
             content: "";
             margin-right: 0;
-
           }
         }
 
