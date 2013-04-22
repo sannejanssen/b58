@@ -111,6 +111,12 @@ function wundertheme_preprocess_page(&$variables){
       $variables['theme_hook_suggestions'][] = 'page__404';
     }
   }
+
+  // Check if we are using panels for this page
+  $variables['page']['use_panels'] = FALSE;
+  if (panels_get_current_page_display()) {
+     $variables['page']['use_panels'] = TRUE;
+  }
 }
 
 /**

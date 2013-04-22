@@ -83,7 +83,6 @@
 <div class="page">
   <header role="banner">
     <div class="container">
-
       <?php if ($page['top']): ?>
         <?php print render($page['top']); ?>
       <?php endif; ?>
@@ -118,53 +117,56 @@
     </nav>
   <?php endif; ?>
 
-  <div class="center">
-    <div class="container">
-      <?php if ($page['sidebar_first']): ?>
-        <aside role="complementary" class="sidebar sidebar_first">
-          <?php print render($page['sidebar_first']); ?>
-        </aside>
-      <?php endif; ?>
-      <div role="main" class="main">
-        <?php if($page['highlighted']){ ?>
-          <?php print render($page['highlighted']); ?>
-        <?php } ?>
+  <?php if (!$page['use_panels']): ?>
+    <div class="center">
+      <div class="container">
+        <?php if ($page['sidebar_first']): ?>
+          <aside role="complementary" class="sidebar sidebar_first">
+            <?php print render($page['sidebar_first']); ?>
+          </aside>
+        <?php endif; ?>
+        <div role="main" class="main">
+          <?php if($page['highlighted']){ ?>
+            <?php print render($page['highlighted']); ?>
+          <?php } ?>
 
-        <?php if($messages){ ?>
-          <div class="drupal-messages">
-            <?php print $messages; ?>
+          <?php if($messages){ ?>
+            <div class="drupal-messages">
+              <?php print $messages; ?>
+            </div>
+          <?php } ?>
+
+          <?php if ($title && !$is_front): ?>
+            <?php print render($title_prefix); ?>
+              <h1><?php print $title; ?></h1>
+            <?php print render($title_suffix); ?>
+          <?php endif; ?>
+
+          <?php print $breadcrumb; ?>
+
+          <?php if ($tabs['#primary']): ?>
+            <nav class="tabs"><?php print render($tabs); ?></nav>
+          <?php endif; ?>
+
+          <div id="content">
+            <?php print render($page['content']); ?>
           </div>
-        <?php } ?>
 
-        <?php if ($title && !$is_front): ?>
-          <?php print render($title_prefix); ?>
-            <h1><?php print $title; ?></h1>
-          <?php print render($title_suffix); ?>
+        </div><!--/main-->
+        <?php if ($page['sidebar_second']): ?>
+        <aside role="complementary" class="sidebar sidebar_second">
+          <?php print render($page['sidebar_second']); ?>
+        </aside>
         <?php endif; ?>
-
-        <?php print $breadcrumb; ?>
-
-        <?php if ($action_links): ?>
-          <ul class="action-links"><?php print render($action_links); ?></ul>
-        <?php endif; ?>
-
-        <?php if ($tabs['#primary']): ?>
-          <nav class="tabs"><?php print render($tabs); ?></nav>
-        <?php endif; ?>
-
-        <div id="content">
-          <?php print render($page['content']); ?>
-        </div>
-
-      </div><!--/main-->
-
-      <?php if ($page['sidebar_second']): ?>
-      <aside role="complementary" class="sidebar sidebar_second">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>
-      <?php endif; ?>
+      </div>
     </div>
-  </div>
+  <?php else: print render($page['content']); ?>
+  <?php endif; ?>
+
+  <?php
+  dsm($page);
+  ?>
+
   <footer role="contentinfo">
     <div class="container">
       <?php print render($page['footer']); ?>

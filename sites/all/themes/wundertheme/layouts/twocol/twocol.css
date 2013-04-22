@@ -1,0 +1,16 @@
+.page-title {
+  width: 100%;
+  clear: both;
+}
+.column-left {
+  float: left;
+  clear: both;  
+  width: 50%;
+}
+.column-right {
+  float: right;
+  width: 50%;
+}
+.form-item, .form-actions  {
+  clear: both;
+}
