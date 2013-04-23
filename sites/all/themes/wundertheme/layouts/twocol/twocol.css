@@ -1,18 +1,22 @@
 
-.panel {
+.widescreen,
+.top,
+.bottom {
   width: 100%;
   float: left;
-  margin-bottom: 2em;
+  margin-bottom: 10px;
 }
-.panel .top {
-  width: 100%;
+
+.column {
+  width: 49%;
   float: left;
+  margin-bottom: 10px;
 }
-.panel .column {
-  width: 50%;
-  float: left;
+
+.column.first {
+  margin-right: 2%;
 }
-.panel .bottom {
-  width: 100%;
-  float: left;
+
+.bottom {
+  margin-bottom: 20px;
 }

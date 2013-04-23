@@ -94,7 +94,9 @@ body {
 }
 
 header,
-.center {
+.center,
+.drupal-messages,
+.widescreen {
   background-color: #fff;
 }
 
@@ -105,5 +107,15 @@ header,
 
 footer {
   border-top: 1px solid #7c7c7c;
+}
+
+.drupal-messages {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .messages {
+    margin: 0;
+
+  }
+  background-color: #fff;
 }
 

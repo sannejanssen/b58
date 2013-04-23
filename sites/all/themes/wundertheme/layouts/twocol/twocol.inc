@@ -13,6 +13,7 @@ $plugin = array(
   'theme' => 'twocol',
   'css' => 'twocol.css',
   'regions' => array(
+    'widescreen' => t('Full width row'),
     'top' => t('Top row'),
     'col_first' => t('First column'),
     'col_second' => t('Second column'),

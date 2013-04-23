@@ -1,61 +1,39 @@
-<div class="panel">
-  <div class="top"><?php print $content['top']; ?></div>
-  <div class="column first"><?php print $content['col_first']; ?></div>
-  <div class="column second"><?php print $content['col_second']; ?></div>
-  <div class="bottom"><?php print $content['bottom']; ?></div>
-</div>
 <?php
+/*
+ * Custom panel layout
+ */
 
 // dsm($variables);
 
-/*
 
+$col_class = array();
+$col_class[] = 'panel';
 
-/*
-for ($i=1; $i <= 10; $i++) {
-  $color = $variables['display']->panel_settings['style_settings']['default']['row' . $i . '_color'];
-  $class = ($color == 'none') ? '' : ' ' . $color;
-  // Dirty hack get this out through configuration.
-  if ($i == 4 && $variables['is_front']) {
-    $class .= ' gmap-front';
-  }
-
-  $column_width = $variables['display']->panel_settings['style_settings']['default']['column_width'];
-  $left_width = substr($column_width, 0, 1);
-  $right_width = substr($column_width, 2, 1);
-
-  // Normal row layout.
-
-  if (isset($content['content' . $i . '_left']) || isset($content['content' . $i . '_right'])) { ?>
-    <div class="row<?php print $class;?>">
-      <div class="container">
-        <?php
-        if ($content['content' . $i . '_left']) {
-            $classes = array();
-            $classes[] = 'column';
-            if (isset($content['content' . $i . '_left']) && isset($content['content' . $i . '_right'])) {
-              $classes[] = 'column-left column'. $left_width;
-            } ?>
-          <div class="<?php print implode(' ', $classes);?>">
-            <?php print $content['content' . $i . '_left']; ?>
-          </div>
-        <?php } ?>
-
-        <?php
-        if ($content['content' . $i . '_right']) {
-          $classes = array();
-          $classes[] = 'column';
-          if (isset($content['content' . $i . '_left']) && isset($content['content' . $i . '_right'])) {
-            $classes[] = 'column-right column'. $right_width;
-          } ?>
-        	<div class="<?php print implode(' ', $classes);?>">
-            <?php print $content['content' . $i . '_right']; ?>
-          </div>
-        <?php } ?>
-      </div>
-    </div>
-  <?php
-  }
+if(!$content['col_first'] || !$content['col_second']) {
+  $col_class[] = 'single';
 }
-*/
+$css = 'class="' . implode(' ', $col_class) . '"';
 ?>
+
+<?php if(isset($content['widescreen'])): ?>
+  <div class="widescreen"><?php print $content['widescreen']; ?></div>
+<?php endif; ?>
+
+<div class="center">
+  <div class="container">
+    <div <?php print $css; ?>>
+      <?php if($content['top']): ?>
+        <div class="top"><?php print $content['top']; ?></div>
+      <?php endif; ?>
+      <?php if($content['col_first']): ?>
+        <div class="column first"><?php print $content['col_first']; ?></div>
+      <?php endif; ?>
+      <?php if($content['col_second']): ?>
+        <div class="column second"><?php print $content['col_second']; ?></div>
+      <?php endif; ?>
+      <?php if($content['bottom']): ?>
+        <div class="bottom"><?php print $content['bottom']; ?></div>
+      <?php endif; ?>
+    </div>
+  </div>
+</div>

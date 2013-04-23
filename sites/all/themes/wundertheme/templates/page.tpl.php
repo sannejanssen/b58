@@ -109,14 +109,6 @@
     </div>
   </header>
 
-  <?php if ($page['primary_navigation']): ?>
-    <nav class="primary_navigation">
-      <div class="container">
-        <?php print render($page['primary_navigation']); ?>
-      </div>
-    </nav>
-  <?php endif; ?>
-
   <?php if (!$page['use_panels']): ?>
    <div class="center">
       <div class="container">
@@ -126,10 +118,6 @@
           </aside>
         <?php endif; ?>
         <div role="main" class="main">
-          <?php if($page['highlighted']){ ?>
-            <?php print render($page['highlighted']); ?>
-          <?php } ?>
-
           <?php if($messages){ ?>
             <div class="drupal-messages">
               <?php print $messages; ?>
@@ -161,16 +149,14 @@
       </div>
     </div>
   <?php else: ?>
-    <div class="center">
-      <div class="container">
-        <?php if($messages){ ?>
-            <div class="drupal-messages">
-              <?php print $messages; ?>
-            </div>
-          <?php } ?>
-        <?php print render($page['content']); ?>
+    <?php if($messages){ ?>
+      <div class="drupal-messages">
+        <div class="container">
+          <?php print $messages; ?>
+        </div>
       </div>
-    </div>
+    <?php } ?>
+    <?php print render($page['content']); ?>
   <?php endif; ?>
 
   <footer role="contentinfo">

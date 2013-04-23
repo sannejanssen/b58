@@ -4,16 +4,15 @@
  * This file is compiled into style.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 6, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.0.0/stylesheets/toolkit/_border-box.scss */
-*, *:after, *:before {
+/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/sites/all/themes/wundertheme/stylesheets/../behaviors/box-sizing/boxsizing.php');
 }
 
-/* line 4, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.0.0/stylesheets/toolkit/_fluid-media.scss */
-img, video {
+/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
+img {
   max-width: 100%;
   height: auto;
 }
@@ -373,12 +372,12 @@ table {
   *zoom: 1;
   max-width: 64.464em;
   _width: 64.464em;
-  padding-left: 0.588em;
-  padding-right: 0.588em;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0.588em;
+  padding-right: 0.588em;
 }
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -468,7 +467,7 @@ table {
 }
 
 /* line 109, ../sass/base/_layout.scss */
-.panel {
+.column {
   background-color: red;
 }
 
@@ -652,7 +651,7 @@ h6 {
   width: 32.11715%;
   float: right;
   margin-right: 0;
-  *margin-left: -1.176em;
+  #margin-left: -1.176em;
   display: inline;
 }
 @media (min-width: 34em) {
@@ -1251,21 +1250,34 @@ body {
   background-color: #252525;
 }
 
-/* line 97, ../sass/base/_design.scss */
+/* line 99, ../sass/base/_design.scss */
 header,
-.center {
+.center,
+.drupal-messages,
+.widescreen {
   background-color: #fff;
 }
 
-/* line 101, ../sass/base/_design.scss */
+/* line 103, ../sass/base/_design.scss */
 .center {
   padding: 1em 0;
   min-height: 200px;
 }
 
-/* line 106, ../sass/base/_design.scss */
+/* line 108, ../sass/base/_design.scss */
 footer {
   border-top: 1px solid #7c7c7c;
+}
+
+/* line 112, ../sass/base/_design.scss */
+.drupal-messages {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+/* line 115, ../sass/base/_design.scss */
+.drupal-messages .messages {
+  margin: 0;
 }
 
 /* ---------- Import styles ---------- */
