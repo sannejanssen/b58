@@ -1,16 +1,18 @@
-.page-title {
+
+.panel {
   width: 100%;
-  clear: both;
-}
-.column-left {
   float: left;
-  clear: both;  
-  width: 50%;
+  margin-bottom: 2em;
 }
-.column-right {
-  float: right;
-  width: 50%;
+.panel .top {
+  width: 100%;
+  float: left;
 }
-.form-item, .form-actions  {
-  clear: both;
+.panel .column {
+  width: 50%;
+  float: left;
+}
+.panel .bottom {
+  width: 100%;
+  float: left;
 }

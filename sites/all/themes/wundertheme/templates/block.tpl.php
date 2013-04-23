@@ -47,14 +47,16 @@
  * -------------------------------------------
  * - remove id
  * - remove content wrapper div
+ * - add class
  */
+$print_classes = (!empty($classes))? TRUE : FALSE;
 ?>
 
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php print render($title_prefix); ?>
-  <?php if ($block->subject): ?>
-    <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
-  <?php endif;?>
-  <?php print render($title_suffix); ?>
-  <?php print $content ?>
-</div>
+<?php if($print_classes) print '<div class="' . $classes . '">'; ?>
+<?php print render($title_prefix); ?>
+<?php if ($block->subject): ?>
+  <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
+<?php endif;?>
+<?php print render($title_suffix); ?>
+<?php print $content ?>
+<?php if($print_classes) print '</div>'; ?>

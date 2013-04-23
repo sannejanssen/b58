@@ -1,14 +1,16 @@
-<?php
-dsm($variables);
-?>
 <div class="panel">
   <div class="top"><?php print $content['top']; ?></div>
   <div class="column first"><?php print $content['col_first']; ?></div>
   <div class="column second"><?php print $content['col_second']; ?></div>
   <div class="bottom"><?php print $content['bottom']; ?></div>
 </div>
-
 <?php
+
+// dsm($variables);
+
+/*
+
+
 /*
 for ($i=1; $i <= 10; $i++) {
   $color = $variables['display']->panel_settings['style_settings']['default']['row' . $i . '_color'];

@@ -118,7 +118,7 @@
   <?php endif; ?>
 
   <?php if (!$page['use_panels']): ?>
-    <div class="center">
+   <div class="center">
       <div class="container">
         <?php if ($page['sidebar_first']): ?>
           <aside role="complementary" class="sidebar sidebar_first">
@@ -160,12 +160,18 @@
         <?php endif; ?>
       </div>
     </div>
-  <?php else: print render($page['content']); ?>
+  <?php else: ?>
+    <div class="center">
+      <div class="container">
+        <?php if($messages){ ?>
+            <div class="drupal-messages">
+              <?php print $messages; ?>
+            </div>
+          <?php } ?>
+        <?php print render($page['content']); ?>
+      </div>
+    </div>
   <?php endif; ?>
-
-  <?php
-  dsm($page);
-  ?>
 
   <footer role="contentinfo">
     <div class="container">
