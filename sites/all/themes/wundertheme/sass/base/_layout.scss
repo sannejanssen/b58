@@ -106,7 +106,69 @@ footer {
   }
 }
 
-.column {
-  background-color: red;
 
+
+/*
+
+/* iPad portrait
+@include at-breakpoint($breakpoint_2) {
 }
+/* iPad landscape
+@include at-breakpoint($breakpoint_3) {
+}
+*/
+/* Custom panel layout */
+.widescreen {
+  @include span-columns(12);
+  text-align: center;
+}
+.panel {
+  @include span-columns(12);
+
+  .top {
+    @include span-columns(12);
+  }
+  .column {
+    @include span-columns(12);
+  }
+  .bottom {
+    @include span-columns(12);
+  }
+
+  /* iPad portrait */
+  @include at-breakpoint($breakpoint_2) {
+    
+    .column {
+      @include span-columns(6, 12);
+
+      &.second {
+        @include span-columns(6 omega, 12);
+      }
+    }
+
+    &.single {
+      .column {
+        @include span-columns(12,12);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
