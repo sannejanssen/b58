@@ -68,7 +68,7 @@ nav.main-responsive {
 /* Dropdown navigation */
 div.main-dropdown {
   > ul {
-    margin-top: 85px;
+    margin-top: 55px;
 
     > li {
       margin-left: 2px;
@@ -77,10 +77,15 @@ div.main-dropdown {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 1.294em; /* 22px on a 17px base font size */
+        font-size: 20px;
 
         background-color: $blue;
         color: $white;
         padding: 0.682em; /* 15px on a 22px base font size */
+
+        @include breakpoint(65em) {
+          font-size: 1.294em; /* 22px on a 17px base font size */
+        }
 
         &:hover,
         &:focus,
@@ -100,8 +105,12 @@ div.main-dropdown {
           border: 1px solid $blue;
           color: $blue;
           text-transform: none;
-          font-size: 1.059em; /* 18px on a 17px base font size */
+          font-size: 16px;
           padding: 0.889em 15px; /* 16px 15px on a 18px base font size */
+
+          @include breakpoint(65em) {
+            font-size: 1.059em; /* 18px on a 17px base font size */
+          }
         }
       }
 

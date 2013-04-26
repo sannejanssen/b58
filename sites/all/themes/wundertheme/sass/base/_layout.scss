@@ -119,8 +119,15 @@ footer {
 */
 /* Custom panel layout */
 .widescreen {
-  @include span-columns(12);
+  display: none;
   text-align: center;
+
+  @include at-breakpoint($breakpoint_2) {
+    display: block;
+    @include span-columns(12,12);
+  }
+
+  
 }
 .panel {
   @include span-columns(12);

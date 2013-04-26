@@ -149,5 +149,7 @@ function wundertheme_preprocess_panels_pane(&$variables){
   $to_remove[] = 'pane-node';
 
   $variables['classes_array'] = array_diff($original_classes, $to_remove);
-  
+
+  // Change pane-title to title
+  $variables['title_attributes_array']['class'][0] = 'title';
 }
