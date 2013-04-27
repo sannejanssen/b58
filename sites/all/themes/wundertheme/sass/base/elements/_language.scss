@@ -12,7 +12,6 @@
 
 /* DESIGN */
 
-
 /* Language switcher */
 .language {
   
@@ -36,6 +35,10 @@
       &:hover,
       &:focus {
         color: #000;
+      }
+
+      .lt-ie9 & {
+        margin-right: 5px;
       }
     }
   }
