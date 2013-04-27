@@ -4,15 +4,16 @@
  * This file is compiled into style.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
-* {
+/* line 6, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.0.0/stylesheets/toolkit/_border-box.scss */
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url('/sites/all/themes/wundertheme/stylesheets/../behaviors/box-sizing/boxsizing.php');
 }
 
-/* line 4, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
-img {
+/* line 4, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.0.0/stylesheets/toolkit/_fluid-media.scss */
+img, video {
   max-width: 100%;
   height: auto;
 }
@@ -372,12 +373,12 @@ table {
   *zoom: 1;
   max-width: 64.464em;
   _width: 64.464em;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 0.588em;
   padding-right: 0.588em;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 38, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -721,7 +722,7 @@ h6 {
   width: 32.11715%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 @media (min-width: 34em) {
@@ -1381,7 +1382,11 @@ footer {
 /*
  * Basic page styling.
  */
-/* line 8, ../sass/features/sub/_basic-page.scss */
+/* line 6, ../sass/features/sub/_basic-page.scss */
+.teaser {
+  margin-bottom: 40px;
+}
+/* line 9, ../sass/features/sub/_basic-page.scss */
 .teaser .title {
   background-color: #f0f0f0;
   font-size: 35px;
@@ -1389,12 +1394,13 @@ footer {
   color: #3298d6;
   padding: 0 20px;
   line-height: 1.6em;
+  margin-bottom: 15px;
 }
-/* line 17, ../sass/features/sub/_basic-page.scss */
+/* line 18, ../sass/features/sub/_basic-page.scss */
 .teaser .body {
   margin-bottom: 1em;
 }
-/* line 23, ../sass/features/sub/_basic-page.scss */
+/* line 24, ../sass/features/sub/_basic-page.scss */
 .teaser .read-more a {
   display: inline-block;
   padding: 8px 14px;
