@@ -1,0 +1,102 @@
+/**
+ * Language
+ *
+ * Table of contents
+ * --------------------
+ * 1. Design
+ * 2. Layout
+ *
+ */
+
+
+
+/* DESIGN */
+
+/* Language switcher */
+.language {
+  
+  margin-bottom: 0.5em;
+
+  ul {
+    @extend %horizontal-menu;
+  }
+
+  li {
+    text-align: center;
+    background-color: $light-grey;
+
+    a {
+      display: block;
+      padding: 5px 0 10px;
+      color: #575756;
+      opacity: 0.7;
+      
+      &.active,
+      &:hover,
+      &:focus {
+        color: #000;
+      }
+
+      .lt-ie9 & {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  /* iPad landscape */
+  @include at-breakpoint($breakpoint_2) {
+    ul {
+      float: right;
+      background-color: $light-grey;
+      padding: 3px 20px 6px;
+      color: #575756;
+      font-size: 0.706em;
+
+
+      li {
+        background: none;
+        margin: 0;
+
+        &::after {
+          content: "|";
+          margin: 0 5px 8px;
+          opacity: 0.7;
+          font-size: 12px;
+        }
+
+        &.last {
+          &::after {
+            content: "";
+            margin-right: 0;
+          }
+        }
+
+        a {
+          padding: 5px 0px;
+          font-size: 0.706em;
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+/* LAYOUT */
+.language {
+  @include span-columns(9,9);
+
+  li {
+    @include span-columns(4);
+
+    &.last {
+      @include span-columns(4 omega);
+    }
+  }
+
+  /* iPad landscape */
+  @include at-breakpoint($breakpoint_2) {
+    ul {
+      float: right;
+    }
+  }
+}
