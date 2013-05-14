@@ -106,6 +106,12 @@
         </div>
       <?php endif; ?>
 
+      <?php print $breadcrumb; ?>
+
+      <?php if ($tabs['#primary']): ?>
+        <nav class="tabs"><?php print render($tabs); ?></nav>
+      <?php endif; ?>
+
     </div>
   </header>
 
@@ -130,16 +136,8 @@
             <?php print render($title_suffix); ?>
           <?php endif; ?>
 
-          <?php print $breadcrumb; ?>
-
-          <?php if ($tabs['#primary']): ?>
-            <nav class="tabs"><?php print render($tabs); ?></nav>
-          <?php endif; ?>
-
-          <div id="content">
-            <?php print render($page['content']); ?>
-          </div>
-
+          <?php print render($page['content']); ?>
+          
         </div><!--/main-->
         <?php if ($page['sidebar_second']): ?>
         <aside role="complementary" class="sidebar sidebar_second">

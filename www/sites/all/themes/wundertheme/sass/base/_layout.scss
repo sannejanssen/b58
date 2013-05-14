@@ -29,76 +29,21 @@ $breakpoint_1: 22em lt-ie9; /* iPhone landscape */
 $breakpoint_2: 32em lt-ie9; /* iPad portrait */
 $breakpoint_3: 49em lt-ie9; /* iPad landscape */
 
-
 /* Layout */
 
 .container {
   @include container;
+  padding: 0 0.5em;
 }
 
 header, .center, footer, .main {
   @extend .clearfix;
 }
 
-.primary_navigation {
-  display: none;
-  @include at-breakpoint($breakpoint_1) {
-    display: block;
-  }
-  @include at-breakpoint($breakpoint_2) {
-    ul.menu {
-      a {
-        font-size: $base-font-size;
-        padding: 0 20px;
-      }
-    }
-  }
+.main {
+  @include span-columns(12);
 }
 
-.one-sidebar {
-  @include at-breakpoint($breakpoint_1) {
-    &.sidebar-first {
-      .main {
-        @include span-columns(9 omega, 12);
-      }
-    }
-    &.sidebar-second {
-      .main {
-        @include span-columns(9, 12);
-      }
-    }
-    aside {
-      &.sidebar_first {
-        @include span-columns(3, 12);
-      }
-      &.sidebar_second {
-        @include span-columns(3 omega, 12);
-      }
-    }
-  }
-}
-
-.two-sidebars {
-  @include at-breakpoint($breakpoint_1) {
-    .main {
-      @include span-columns(6, 12);
-    }
-    .sidebar_first {
-      @include span-columns(3, 12);
-    }
-    .sidebar_second {
-      @include span-columns(3 omega, 12);
-    }
-  }
-}
-
-.no-sidebars {
-  @include at-breakpoint($breakpoint_1) {
-    .main {
-      @include span-columns(12 omega, 12);
-    }
-  }
-}
 
 footer {
   @include at-breakpoint($breakpoint_1) {
