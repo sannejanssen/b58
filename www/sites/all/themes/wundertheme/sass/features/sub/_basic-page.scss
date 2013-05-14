@@ -1,29 +1,68 @@
 /*
  * Basic page styling.
  */
+.center {
+  h1 {
+    @include span-columns(12);
+    color: $blue;
+    margin-bottom: 30px;
+  }
 
-h1 {
-  @include span-columns(12);
-  color: $blue;
-  margin-bottom: 30px;
+  h2 {
+    @include span-columns(12);
+    background-color: $light-grey;
+    color: $blue;
+    font-size: 1.4 * $base-font-size;
+    line-height: 1.2em;
+    padding: 8px 20px 10px;
+    margin-bottom: 20px;
+
+    @include at-breakpoint($breakpoint_2) {
+      font-size: 2 * $base-font-size;
+    }
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
 }
+
+
 .intro {
   @include span-columns(12);
-  font-size: 2 * $base-font-size;
+  font-size: 1.4 * $base-font-size;
   font-weight: 200;
   color: $intro-color;
   text-align: center;
-  background-image: url('../images/border.png');
+  margin-bottom: 30px;
+
+  
+  @include at-breakpoint($breakpoint_2) {
+    background-image: url('../images/border.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+    padding-bottom: 55px;
+    margin-bottom: 50px;
+    font-size: 2 * $base-font-size;
+  }
+}
+
+blockquote {
+  text-indent: 30px;
+  background-image: url('../images/quote.png');
   background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100%;
-  padding-bottom: 55px;
-  margin-bottom: 50px;
+  background-position: 0px 0px;
+  color: $quote;
 }
 
 .field-collection-view {
   @include span-columns(12);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .text-block {
   @include span-columns(12);
@@ -35,15 +74,20 @@ h1 {
     @include span-columns(12);
   }
 
+  @include at-breakpoint($breakpoint_2) {
+    .group-left {
+      @include span-columns(4,12);
+    }
+    .group-right {
+      @include span-columns(8 omega,12);
+    }
+
+  }
+
 }
 
 .subtitle {
-  @include span-columns(12);
-  background-color: $light-grey;
-  color: $blue;
-  font-size: 2 * $base-font-size;
-  font-weight: 200;
-  padding: 0 15px;
+
 }
 
 

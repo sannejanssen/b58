@@ -372,10 +372,10 @@ table {
   *zoom: 1;
   max-width: 64.464em;
   _width: 64.464em;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 0.588em;
   padding-right: 0.588em;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 0.5em;
 }
 /* line 38, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -393,7 +393,7 @@ table {
   display: inline;
 }
 
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer {
   clear: both;
 }
@@ -413,7 +413,7 @@ table {
   display: none;
   text-align: center;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 .widescreen {
   display: block;
   width: 100%;
@@ -463,7 +463,7 @@ table {
   width: 49.08786%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 /* line 102, ../sass/base/_layout.scss */
@@ -521,43 +521,50 @@ label {
 /* Line-heights */
 /* line 55, ../sass/base/_typography.scss */
 h1 {
-  font-size: 2.824em;
-  line-height: 1.49975em;
+  font-size: 2.35333em;
+  line-height: 1.1998em;
   font-weight: normal;
   text-align: center;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 200;
 }
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
+.lt-ie9 h1 {
+  font-size: 2.824em;
+  line-height: 1.49975em;
+}
 
-/* line 63, ../sass/base/_typography.scss */
+/* line 68, ../sass/base/_typography.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.88235em;
   font-weight: normal;
+  font-weight: 200;
 }
 
-/* line 68, ../sass/base/_typography.scss */
+/* line 74, ../sass/base/_typography.scss */
 h3 {
-  font-size: 1.17em;
-  line-height: 1.20664em;
+  font-size: 1.294em;
+  line-height: 2.18202em;
   font-weight: normal;
+  font-weight: 200;
 }
 
-/* line 73, ../sass/base/_typography.scss */
+/* line 80, ../sass/base/_typography.scss */
 h4 {
   font-size: 1em;
   line-height: 1.41176em;
   font-weight: normal;
 }
 
-/* line 78, ../sass/base/_typography.scss */
+/* line 85, ../sass/base/_typography.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.70092em;
   font-weight: normal;
 }
 
-/* line 83, ../sass/base/_typography.scss */
+/* line 90, ../sass/base/_typography.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.88235em;
@@ -620,16 +627,16 @@ h6 {
   margin: 0;
 }
 /* line 60, ../sass/base/elements/_language.scss */
-.lt-ie9 .language ul li::after {
+.lt-ie9 .language ul li::before {
   content: "|";
   margin: 0 5px 8px;
   opacity: 0.7;
   font-size: 12px;
 }
 /* line 68, ../sass/base/elements/_language.scss */
-.lt-ie9 .language ul li.last::after {
+.lt-ie9 .language ul li.first::before {
   content: "";
-  margin-right: 0;
+  margin-left: 0;
 }
 /* line 74, ../sass/base/elements/_language.scss */
 .lt-ie9 .language ul li a {
@@ -659,7 +666,7 @@ h6 {
   width: 32.11715%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 /* line 98, ../sass/base/elements/_language.scss */
@@ -690,7 +697,7 @@ div.main-dropdown h2 {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 div.main-dropdown {
   display: block;
 }
@@ -734,7 +741,7 @@ nav.main-responsive #navigationtoggle {
   top: -50px;
   right: 0;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 nav.main-responsive {
   /* Hide basic navigation & show dropdown */
   display: none;
@@ -806,12 +813,19 @@ div.main-dropdown > ul > li ul li.first {
   padding-top: 0.294em;
   /* 5px on a 17px base font size */
 }
-/* line 126, ../sass/base/elements/_main-navigation.scss */
-div.main-dropdown > ul > li ul li.last, div.main-dropdown > ul > li ul li:last-child {
+/* line 125, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li ul li.last {
   padding-bottom: 0.294em;
   /* 5px on a 17px base font size */
 }
-/* line 131, ../sass/base/elements/_main-navigation.scss */
+/* line 129, ../sass/base/elements/_main-navigation.scss */
+div.main-dropdown > ul > li ul li.firstandlast {
+  padding-top: 0.294em;
+  /* 5px on a 17px base font size */
+  padding-bottom: 0.294em;
+  /* 5px on a 17px base font size */
+}
+/* line 135, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li a {
   text-transform: none;
   font-size: 0.941em;
@@ -819,12 +833,12 @@ div.main-dropdown > ul > li ul li a {
   padding: 0.588em;
   /* 10px on a 16px base font size */
 }
-/* line 138, ../sass/base/elements/_main-navigation.scss */
+/* line 142, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown > ul > li ul li a:hover, div.main-dropdown > ul > li ul li a:focus, div.main-dropdown > ul > li ul li a.active {
   background-color: white;
   color: #3298d6;
 }
-/* line 148, ../sass/base/elements/_main-navigation.scss */
+/* line 152, ../sass/base/elements/_main-navigation.scss */
 div.main-dropdown .sf-menu.sf-horizontal.sf-shadow ul {
   padding-top: 0.706em !important;
   /* 12px on a 17px base font size */
@@ -837,26 +851,26 @@ div.main-dropdown .sf-menu.sf-horizontal.sf-shadow ul {
 }
 
 /* Responsive navigation */
-/* line 160, ../sass/base/elements/_main-navigation.scss */
+/* line 164, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li {
   background-color: #3298d6;
 }
-/* line 163, ../sass/base/elements/_main-navigation.scss */
+/* line 167, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li a {
   color: #fff;
   padding: 0.882em;
   /* 15px on a 17px base font size */
 }
-/* line 168, ../sass/base/elements/_main-navigation.scss */
+/* line 172, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li li {
   background-color: #6fb7e2;
 }
-/* line 171, ../sass/base/elements/_main-navigation.scss */
+/* line 175, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu li li a {
   padding-left: 1.471em;
   /* 25px on a 17px base font size */
 }
-/* line 177, ../sass/base/elements/_main-navigation.scss */
+/* line 181, ../sass/base/elements/_main-navigation.scss */
 nav.main-responsive .menu #navigationtoggle {
   background-image: url("../images/mobile-nav.png");
   background-image: none, url("../images/mobile-nav.svg"), url("../images/mobile-nav.png");
@@ -907,7 +921,7 @@ footer .footer-nav > .menu > li a {
   font-weight: 300;
   /* iPad portrait */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > .menu > li a {
   font-size: 1.294em;
   /* 22px on a 17px base font size */
@@ -935,7 +949,7 @@ footer .footer-nav > .menu > li li.leaf a {
   /* 24px on a 17px base font size */
   /* iPad portrait */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > .menu > li li.leaf a {
   font-size: 0.941em;
   /* 16px on a 17px base font size */
@@ -958,14 +972,14 @@ footer .social-tools h2 {
   /* iPad portrait */
   /* iPad landscape */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools h2 {
   font-size: 1.294em;
   /* 22px on a 17px base font size */
   line-height: 1.529em;
   /* 26px on a 17px base font size */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools h2 {
   text-align: right;
 }
@@ -977,7 +991,7 @@ footer .social-tools ul br {
 footer .social-tools ul li {
   /* iPad landscape */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools ul li {
   text-align: right;
 }
@@ -991,7 +1005,7 @@ footer .footer-nav {
   display: inline;
   /* iPad landscape */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav {
   width: 49.08786%;
   float: left;
@@ -1020,7 +1034,7 @@ footer .footer-nav > ul > li {
 footer .footer-nav > ul > li.last {
   display: none;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > ul > li {
   width: 49.08786%;
   float: left;
@@ -1032,10 +1046,10 @@ footer .footer-nav > ul > li.last {
   width: 49.08786%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > ul > li {
   width: 32.11715%;
   float: left;
@@ -1054,10 +1068,10 @@ footer .footer-nav > ul > li.last {
   width: 32.11715%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .footer-nav > ul > li {
   width: 30.85577%;
   float: left;
@@ -1076,7 +1090,7 @@ footer .footer-nav > ul > li.last {
   width: 30.85577%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 /* line 159, ../sass/base/elements/_footer.scss */
@@ -1118,26 +1132,26 @@ footer .social-tools ul li {
   /* iPone landscape */
   /* iPad portrait */
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools ul li {
   width: 10.03659%;
   float: left;
   margin-right: 1.20883%;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools ul li {
   width: 6.42436%;
   float: left;
   margin-right: 0.77377%;
   display: inline;
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer .social-tools {
   width: 23.63179%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 /* line 196, ../sass/base/elements/_footer.scss */
@@ -1145,7 +1159,7 @@ footer .social-tools ul li {
   width: 83.02929%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 /* line 199, ../sass/base/elements/_footer.scss */
@@ -1160,7 +1174,7 @@ footer .social-tools ul li {
   width: 22.9288%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 
@@ -1213,7 +1227,7 @@ header .header {
   width: 57.57322%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
   position: relative;
 }
@@ -1322,7 +1336,7 @@ footer {
  * Basic page styling.
  */
 /* line 5, ../sass/features/sub/_basic-page.scss */
-h1 {
+.center h1 {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
@@ -1330,74 +1344,115 @@ h1 {
   color: #3298d6;
   margin-bottom: 30px;
 }
-
-/* line 10, ../sass/features/sub/_basic-page.scss */
-.intro {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-  font-size: 34px;
-  font-weight: 200;
-  color: #2e2e2e;
-  text-align: center;
-  background-image: url("../images/border.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100%;
-  padding-bottom: 55px;
-  margin-bottom: 50px;
-}
-
-/* line 24, ../sass/features/sub/_basic-page.scss */
-.field-collection-view {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-  margin-bottom: 50px;
-}
-
-/* line 28, ../sass/features/sub/_basic-page.scss */
-.text-block {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-/* line 31, ../sass/features/sub/_basic-page.scss */
-.text-block .group-left {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-/* line 34, ../sass/features/sub/_basic-page.scss */
-.text-block .group-right {
-  width: 100%;
-  float: left;
-  margin-right: 1.82427%;
-  display: inline;
-}
-
-/* line 40, ../sass/features/sub/_basic-page.scss */
-.subtitle {
+/* line 11, ../sass/features/sub/_basic-page.scss */
+.center h2 {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
   background-color: #f0f0f0;
   color: #3298d6;
+  font-size: 23.8px;
+  line-height: 1.2em;
+  padding: 8px 20px 10px;
+  margin-bottom: 20px;
+}
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
+.lt-ie9 .center h2 {
   font-size: 34px;
-  font-weight: 200;
-  padding: 0 15px;
+}
+/* line 25, ../sass/features/sub/_basic-page.scss */
+.center h3 {
+  margin-bottom: 0;
+}
+/* line 29, ../sass/features/sub/_basic-page.scss */
+.center h4 {
+  margin-bottom: 0;
 }
 
-/* line 50, ../sass/features/sub/_basic-page.scss */
+/* line 35, ../sass/features/sub/_basic-page.scss */
+.intro {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  font-size: 23.8px;
+  font-weight: 200;
+  color: #2e2e2e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
+.lt-ie9 .intro {
+  background-image: url("../images/border.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  padding-bottom: 55px;
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+
+/* line 55, ../sass/features/sub/_basic-page.scss */
+blockquote {
+  text-indent: 30px;
+  background-image: url("../images/quote.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  color: #9c9c9c;
+}
+
+/* line 63, ../sass/features/sub/_basic-page.scss */
+.field-collection-view {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  margin-bottom: 30px;
+}
+
+/* line 67, ../sass/features/sub/_basic-page.scss */
+.text-block {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+}
+/* line 70, ../sass/features/sub/_basic-page.scss */
+.text-block .group-left {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+}
+/* line 73, ../sass/features/sub/_basic-page.scss */
+.text-block .group-right {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+}
+/* line 78, ../sass/features/sub/_basic-page.scss */
+.lt-ie9 .text-block .group-left {
+  width: 32.11715%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+}
+/* line 81, ../sass/features/sub/_basic-page.scss */
+.lt-ie9 .text-block .group-right {
+  width: 66.05858%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.176em;
+  display: inline;
+}
+
+/* line 94, ../sass/features/sub/_basic-page.scss */
 .teaser {
   margin-bottom: 40px;
 }
-/* line 53, ../sass/features/sub/_basic-page.scss */
+/* line 97, ../sass/features/sub/_basic-page.scss */
 .teaser .title {
   background-color: #f0f0f0;
   font-size: 35px;
@@ -1407,11 +1462,11 @@ h1 {
   line-height: 1.6em;
   margin-bottom: 15px;
 }
-/* line 62, ../sass/features/sub/_basic-page.scss */
+/* line 106, ../sass/features/sub/_basic-page.scss */
 .teaser .body {
   margin-bottom: 1em;
 }
-/* line 68, ../sass/features/sub/_basic-page.scss */
+/* line 112, ../sass/features/sub/_basic-page.scss */
 .teaser .read-more a {
   display: inline-block;
   padding: 8px 14px;

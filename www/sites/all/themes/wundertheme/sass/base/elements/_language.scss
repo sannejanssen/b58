@@ -57,17 +57,17 @@
         background: none;
         margin: 0;
 
-        &::after {
+        &::before {
           content: "|";
           margin: 0 5px 8px;
           opacity: 0.7;
           font-size: 12px;
         }
 
-        &.last {
-          &::after {
+        &.first {
+          &::before {
             content: "";
-            margin-right: 0;
+            margin-left: 0;
           }
         }
 

@@ -122,8 +122,12 @@ div.main-dropdown {
           &.first {
             padding-top: 0.294em; /* 5px on a 17px base font size */
           }
-          &.last,
-          &:last-child {
+          &.last {
+            padding-bottom: 0.294em; /* 5px on a 17px base font size */
+          }
+
+          &.firstandlast {
+            padding-top: 0.294em; /* 5px on a 17px base font size */
             padding-bottom: 0.294em; /* 5px on a 17px base font size */
           }
           

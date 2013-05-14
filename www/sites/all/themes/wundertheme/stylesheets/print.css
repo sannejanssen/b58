@@ -355,10 +355,10 @@ table {
   *zoom: 1;
   max-width: 64.464em;
   _width: 64.464em;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 0.588em;
   padding-right: 0.588em;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 0.5em;
 }
 /* line 38, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -382,7 +382,7 @@ table {
     clear: both;
   }
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 footer {
   clear: both;
 }
@@ -411,7 +411,7 @@ table {
     margin-right: 1.82427%;
   }
 }
-/* line 105, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0/sass/susy/_media.scss */
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 .widescreen {
   display: block;
   width: 100%;
@@ -481,7 +481,7 @@ table {
   width: 49.08786%;
   float: right;
   margin-right: 0;
-  #margin-left: -1.176em;
+  *margin-left: -1.176em;
   display: inline;
 }
 /* line 102, ../sass/base/_layout.scss */
@@ -539,43 +539,57 @@ label {
 /* Line-heights */
 /* line 55, ../sass/base/_typography.scss */
 h1 {
-  font-size: 2.824em;
-  line-height: 1.49975em;
+  font-size: 2.35333em;
+  line-height: 1.1998em;
   font-weight: normal;
   text-align: center;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 200;
 }
+@media (min-width: 34em) {
+  /* line 55, ../sass/base/_typography.scss */
+  h1 {
+    font-size: 2.824em;
+    line-height: 1.49975em;
+  }
+}
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
+.lt-ie9 h1 {
+  font-size: 2.824em;
+  line-height: 1.49975em;
+}
 
-/* line 63, ../sass/base/_typography.scss */
+/* line 68, ../sass/base/_typography.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.88235em;
   font-weight: normal;
+  font-weight: 200;
 }
 
-/* line 68, ../sass/base/_typography.scss */
+/* line 74, ../sass/base/_typography.scss */
 h3 {
-  font-size: 1.17em;
-  line-height: 1.20664em;
+  font-size: 1.294em;
+  line-height: 2.18202em;
   font-weight: normal;
+  font-weight: 200;
 }
 
-/* line 73, ../sass/base/_typography.scss */
+/* line 80, ../sass/base/_typography.scss */
 h4 {
   font-size: 1em;
   line-height: 1.41176em;
   font-weight: normal;
 }
 
-/* line 78, ../sass/base/_typography.scss */
+/* line 85, ../sass/base/_typography.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.70092em;
   font-weight: normal;
 }
 
-/* line 83, ../sass/base/_typography.scss */
+/* line 90, ../sass/base/_typography.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.88235em;

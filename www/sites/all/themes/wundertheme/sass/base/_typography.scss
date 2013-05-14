@@ -19,11 +19,11 @@ $base-font-family: "Source Sans Pro", Arial, sans-serif;
 
 // The font sizes for h1-h6.
 $h1-font-size: 2.824    * $base-font-size !default;
-$h2-font-size: 1.5  * $base-font-size !default;
-$h3-font-size: 1.17 * $base-font-size !default;
-$h4-font-size: 1    * $base-font-size !default;
-$h5-font-size: 0.83 * $base-font-size !default;
-$h6-font-size: 0.75 * $base-font-size !default;
+$h2-font-size: 1.5      * $base-font-size !default;
+$h3-font-size: 1.294    * $base-font-size !default;
+$h4-font-size: 1        * $base-font-size !default;
+$h5-font-size: 0.83     * $base-font-size !default;
+$h6-font-size: 0.75     * $base-font-size !default;
 
 
 // 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
@@ -53,7 +53,12 @@ label {
 
 /* Line-heights */
 h1 {
-  @include adjust-font-size-to($h1-font-size);
+  @include adjust-font-size-to($h1-font-size/1.2);
+
+  @include at-breakpoint($breakpoint_2) {
+    @include adjust-font-size-to($h1-font-size);
+  }
+
   font-weight: normal;
   text-align: center;
   font-family: $base-font-family;
@@ -63,11 +68,13 @@ h1 {
 h2 {
   @include adjust-font-size-to($h2-font-size);
   font-weight: normal;
+  font-weight: 200;
 }
 
 h3 {
   @include adjust-font-size-to($h3-font-size);
   font-weight: normal;
+  font-weight: 200;
 }
 
 h4 {
