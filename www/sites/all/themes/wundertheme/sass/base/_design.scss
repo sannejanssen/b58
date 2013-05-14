@@ -117,16 +117,70 @@ footer {
 .drupal-messages {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #fff;
+
   .messages {
     margin: 0;
+    background-color: #ebf3f7;
+    border: 1px solid #ccc;
+    padding: 20px;
 
   }
-  background-color: #fff;
+  
 }
 
 .breadcrumb {
+  @include span-columns(12);
+  margin-top: 10px;
+  text-align: left;
   display: none;
+
+
+  .pipe {
+    color: $medium-grey;
+    margin: 0 7px;
+  }
+
+  a {
+    color: $medium-grey;
+
+    &:hover {
+      color: $base-text-color;
+    }
+  }
+
+  @include at-breakpoint($breakpoint_2) {
+    display: block;
+  }
+
+  @include at-breakpoint($breakpoint_3) {
+    text-align: right;
+  }
 }
-.tabs {
-  display: none;
+
+nav.tabs {
+  @include span-columns(12);
+  margin-top: 10px;
+
+  li {
+    display: inline-block;
+    
+    a {
+      padding: 6px 20px;
+      background-color: $light-grey;
+      @include border-radius(4px);
+
+      &:hover,
+      &.active {
+        color: $white;
+        background-color: $medium-grey;
+      }
+    }
+  }
 }
+
+
+
+
+
+

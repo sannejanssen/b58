@@ -617,7 +617,7 @@ h6 {
 .lt-ie9 .language ul {
   float: right;
   background-color: #f0f0f0;
-  padding: 3px 20px 6px;
+  padding: 3px 20px 6px 5px;
   color: #575756;
   font-size: 0.706em;
 }
@@ -638,7 +638,7 @@ h6 {
   content: "";
   margin-left: 0;
 }
-/* line 74, ../sass/base/elements/_language.scss */
+/* line 73, ../sass/base/elements/_language.scss */
 .lt-ie9 .language ul li a {
   padding: 5px 0px;
   font-size: 0.706em;
@@ -646,7 +646,7 @@ h6 {
 }
 
 /* LAYOUT */
-/* line 85, ../sass/base/elements/_language.scss */
+/* line 84, ../sass/base/elements/_language.scss */
 .language {
   width: 100%;
   float: left;
@@ -654,14 +654,14 @@ h6 {
   display: inline;
   /* iPad landscape */
 }
-/* line 88, ../sass/base/elements/_language.scss */
+/* line 87, ../sass/base/elements/_language.scss */
 .language li {
   width: 32.11715%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 91, ../sass/base/elements/_language.scss */
+/* line 90, ../sass/base/elements/_language.scss */
 .language li.last {
   width: 32.11715%;
   float: right;
@@ -669,7 +669,7 @@ h6 {
   *margin-left: -1.176em;
   display: inline;
 }
-/* line 98, ../sass/base/elements/_language.scss */
+/* line 97, ../sass/base/elements/_language.scss */
 .lt-ie9 .language ul {
   float: right;
 }
@@ -1309,19 +1309,70 @@ footer {
   padding-bottom: 10px;
   background-color: #fff;
 }
-/* line 120, ../sass/base/_design.scss */
+/* line 122, ../sass/base/_design.scss */
 .drupal-messages .messages {
   margin: 0;
+  background-color: #ebf3f7;
+  border: 1px solid #ccc;
+  padding: 20px;
 }
 
-/* line 127, ../sass/base/_design.scss */
+/* line 132, ../sass/base/_design.scss */
 .breadcrumb {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  margin-top: 10px;
+  text-align: left;
   display: none;
 }
+/* line 139, ../sass/base/_design.scss */
+.breadcrumb .pipe {
+  color: #9c9c9c;
+  margin: 0 7px;
+}
+/* line 144, ../sass/base/_design.scss */
+.breadcrumb a {
+  color: #9c9c9c;
+}
+/* line 147, ../sass/base/_design.scss */
+.breadcrumb a:hover {
+  color: #333333;
+}
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
+.lt-ie9 .breadcrumb {
+  display: block;
+}
+/* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
+.lt-ie9 .breadcrumb {
+  text-align: right;
+}
 
-/* line 130, ../sass/base/_design.scss */
-.tabs {
-  display: none;
+/* line 161, ../sass/base/_design.scss */
+nav.tabs {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  margin-top: 10px;
+}
+/* line 165, ../sass/base/_design.scss */
+nav.tabs li {
+  display: inline-block;
+}
+/* line 168, ../sass/base/_design.scss */
+nav.tabs li a {
+  padding: 6px 20px;
+  background-color: #f0f0f0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 174, ../sass/base/_design.scss */
+nav.tabs li a:hover, nav.tabs li a.active {
+  color: white;
+  background-color: #9c9c9c;
 }
 
 /* ---------- Import styles ---------- */
@@ -1448,25 +1499,25 @@ blockquote {
   display: inline;
 }
 
-/* line 94, ../sass/features/sub/_basic-page.scss */
+/* line 89, ../sass/features/sub/_basic-page.scss */
 .teaser {
   margin-bottom: 40px;
 }
-/* line 97, ../sass/features/sub/_basic-page.scss */
+/* line 92, ../sass/features/sub/_basic-page.scss */
 .teaser .title {
   background-color: #f0f0f0;
   font-size: 35px;
   font-weight: 200;
   color: #3298d6;
-  padding: 0 20px;
+  padding: 0 15px;
   line-height: 1.6em;
   margin-bottom: 15px;
 }
-/* line 106, ../sass/features/sub/_basic-page.scss */
+/* line 101, ../sass/features/sub/_basic-page.scss */
 .teaser .body {
   margin-bottom: 1em;
 }
-/* line 112, ../sass/features/sub/_basic-page.scss */
+/* line 107, ../sass/features/sub/_basic-page.scss */
 .teaser .read-more a {
   display: inline-block;
   padding: 8px 14px;
