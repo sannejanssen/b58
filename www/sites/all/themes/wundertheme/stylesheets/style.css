@@ -1363,11 +1363,10 @@ footer {
   /* line 132, ../sass/base/_design.scss */
   .breadcrumb {
     text-align: right;
-    margin-top: 0;
   }
 }
 
-/* line 162, ../sass/base/_design.scss */
+/* line 161, ../sass/base/_design.scss */
 nav.tabs {
   width: 100%;
   float: left;
@@ -1375,11 +1374,11 @@ nav.tabs {
   display: inline;
   margin-top: 10px;
 }
-/* line 166, ../sass/base/_design.scss */
+/* line 165, ../sass/base/_design.scss */
 nav.tabs li {
   display: inline-block;
 }
-/* line 169, ../sass/base/_design.scss */
+/* line 168, ../sass/base/_design.scss */
 nav.tabs li a {
   padding: 6px 20px;
   background-color: #f0f0f0;
@@ -1387,7 +1386,7 @@ nav.tabs li a {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 175, ../sass/base/_design.scss */
+/* line 174, ../sass/base/_design.scss */
 nav.tabs li a:hover, nav.tabs li a.active {
   color: white;
   background-color: #9c9c9c;
