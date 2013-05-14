@@ -155,6 +155,7 @@ footer {
 
   @include at-breakpoint($breakpoint_3) {
     text-align: right;
+    margin-top: 0;
   }
 }
 
