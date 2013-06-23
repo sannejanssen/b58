@@ -490,7 +490,7 @@ table {
 /*
  * Base font
  * Source Sans Pro
- * Available weights: 200,400,600;
+ * Available weights: 300,400,600;
  */
 /* line 33, ../sass/base/_typography.scss */
 html {
@@ -526,7 +526,7 @@ h1 {
   font-weight: normal;
   text-align: center;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
 /* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
 .lt-ie9 h1 {
@@ -539,7 +539,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.88235em;
   font-weight: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* line 74, ../sass/base/_typography.scss */
@@ -547,7 +547,7 @@ h3 {
   font-size: 1.294em;
   line-height: 2.18202em;
   font-weight: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* line 80, ../sass/base/_typography.scss */
@@ -1289,7 +1289,7 @@ header,
 /* line 103, ../sass/base/_design.scss */
 .widescreen {
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 /* line 108, ../sass/base/_design.scss */
@@ -1326,17 +1326,18 @@ footer {
   margin-top: 10px;
   text-align: left;
   display: none;
+  font-size: 0.882em;
 }
-/* line 139, ../sass/base/_design.scss */
+/* line 140, ../sass/base/_design.scss */
 .breadcrumb .pipe {
   color: #9c9c9c;
   margin: 0 7px;
 }
-/* line 144, ../sass/base/_design.scss */
+/* line 145, ../sass/base/_design.scss */
 .breadcrumb a {
   color: #9c9c9c;
 }
-/* line 147, ../sass/base/_design.scss */
+/* line 148, ../sass/base/_design.scss */
 .breadcrumb a:hover {
   color: #333333;
 }
@@ -1349,7 +1350,7 @@ footer {
   text-align: right;
 }
 
-/* line 161, ../sass/base/_design.scss */
+/* line 162, ../sass/base/_design.scss */
 nav.tabs {
   width: 100%;
   float: left;
@@ -1357,11 +1358,11 @@ nav.tabs {
   display: inline;
   margin-top: 10px;
 }
-/* line 165, ../sass/base/_design.scss */
+/* line 166, ../sass/base/_design.scss */
 nav.tabs li {
   display: inline-block;
 }
-/* line 168, ../sass/base/_design.scss */
+/* line 169, ../sass/base/_design.scss */
 nav.tabs li a {
   padding: 6px 20px;
   background-color: #f0f0f0;
@@ -1369,7 +1370,7 @@ nav.tabs li a {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 174, ../sass/base/_design.scss */
+/* line 175, ../sass/base/_design.scss */
 nav.tabs li a:hover, nav.tabs li a.active {
   color: white;
   background-color: #9c9c9c;
@@ -1401,11 +1402,11 @@ nav.tabs li a:hover, nav.tabs li a.active {
   float: left;
   margin-right: 1.82427%;
   display: inline;
+  padding: 8px 20px 10px;
   background-color: #f0f0f0;
   color: #3298d6;
   font-size: 23.8px;
   line-height: 1.2em;
-  padding: 8px 20px 10px;
   margin-bottom: 20px;
 }
 /* line 91, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.6/sass/susy/_media.scss */
@@ -1428,7 +1429,7 @@ nav.tabs li a:hover, nav.tabs li a.active {
   margin-right: 1.82427%;
   display: inline;
   font-size: 23.8px;
-  font-weight: 200;
+  font-weight: 300;
   color: #2e2e2e;
   text-align: center;
   margin-bottom: 30px;
@@ -1459,7 +1460,7 @@ blockquote {
   float: left;
   margin-right: 1.82427%;
   display: inline;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 /* line 67, ../sass/features/sub/_basic-page.scss */
@@ -1501,13 +1502,13 @@ blockquote {
 
 /* line 89, ../sass/features/sub/_basic-page.scss */
 .teaser {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 /* line 92, ../sass/features/sub/_basic-page.scss */
 .teaser .title {
   background-color: #f0f0f0;
   font-size: 35px;
-  font-weight: 200;
+  font-weight: 300;
   color: #3298d6;
   padding: 0 15px;
   line-height: 1.6em;

@@ -10,7 +10,7 @@
 /*
  * Base font
  * Source Sans Pro
- * Available weights: 200,400,600;
+ * Available weights: 300,400,600;
  */
 
 $base-font-size: 17px;
@@ -62,19 +62,19 @@ h1 {
   font-weight: normal;
   text-align: center;
   font-family: $base-font-family;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h2 {
   @include adjust-font-size-to($h2-font-size);
   font-weight: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h3 {
   @include adjust-font-size-to($h3-font-size);
   font-weight: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h4 {

@@ -508,7 +508,7 @@ table {
 /*
  * Base font
  * Source Sans Pro
- * Available weights: 200,400,600;
+ * Available weights: 300,400,600;
  */
 /* line 33, ../sass/base/_typography.scss */
 html {
@@ -544,7 +544,7 @@ h1 {
   font-weight: normal;
   text-align: center;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
 @media (min-width: 34em) {
   /* line 55, ../sass/base/_typography.scss */
@@ -564,7 +564,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.88235em;
   font-weight: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* line 74, ../sass/base/_typography.scss */
@@ -572,7 +572,7 @@ h3 {
   font-size: 1.294em;
   line-height: 2.18202em;
   font-weight: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* line 80, ../sass/base/_typography.scss */

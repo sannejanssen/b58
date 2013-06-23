@@ -10,11 +10,11 @@
 
   h2 {
     @include span-columns(12);
+    padding: 8px 20px 10px;
     background-color: $light-grey;
     color: $blue;
     font-size: 1.4 * $base-font-size;
     line-height: 1.2em;
-    padding: 8px 20px 10px;
     margin-bottom: 20px;
 
     @include at-breakpoint($breakpoint_2) {
@@ -35,7 +35,7 @@
 .intro {
   @include span-columns(12);
   font-size: 1.4 * $base-font-size;
-  font-weight: 200;
+  font-weight: 300;
   color: $intro-color;
   text-align: center;
   margin-bottom: 30px;
@@ -62,7 +62,7 @@ blockquote {
 
 .field-collection-view {
   @include span-columns(12);
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .text-block {
   @include span-columns(12);
@@ -87,12 +87,12 @@ blockquote {
 }
 
 .teaser {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 
   .title {
     background-color: #f0f0f0;
     font-size: 35px;
-    font-weight: 200;
+    font-weight: 300;
     color: $blue;
     padding: 0 15px;
     line-height: 1.6em;
