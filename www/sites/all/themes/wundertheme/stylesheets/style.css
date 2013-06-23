@@ -4,15 +4,17 @@
  * This file is compiled into style.css
  */
 /* ---------- Compass Extensions ---------- */
-/* line 8, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_border-box.scss */
-* {
+/* line 10, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.2.1.3/stylesheets/toolkit/_border-box.scss */
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.1.15/stylesheets/toolkit/_fluid-media.scss */
-img {
+/* line 4, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-0.2.1.3/stylesheets/toolkit/_fluid-media.scss */
+img, video {
   max-width: 100%;
   height: auto;
 }
@@ -378,7 +380,7 @@ table {
   margin-right: auto;
   padding: 0 0.5em;
 }
-/* line 38, ../../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;
@@ -520,8 +522,9 @@ label {
 }
 
 /* Line-heights */
-/* line 55, ../sass/base/_typography.scss */
-h1 {
+/* line 56, ../sass/base/_typography.scss */
+h1,
+h2.title {
   font-size: 2.35333em;
   line-height: 1.1998em;
   font-weight: normal;
@@ -530,14 +533,15 @@ h1 {
   font-weight: 300;
 }
 @media (min-width: 34em) {
-  /* line 55, ../sass/base/_typography.scss */
-  h1 {
+  /* line 56, ../sass/base/_typography.scss */
+  h1,
+  h2.title {
     font-size: 2.824em;
     line-height: 1.49975em;
   }
 }
 
-/* line 68, ../sass/base/_typography.scss */
+/* line 69, ../sass/base/_typography.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.88235em;
@@ -545,7 +549,7 @@ h2 {
   font-weight: 300;
 }
 
-/* line 74, ../sass/base/_typography.scss */
+/* line 75, ../sass/base/_typography.scss */
 h3 {
   font-size: 1.294em;
   line-height: 2.18202em;
@@ -553,21 +557,21 @@ h3 {
   font-weight: 300;
 }
 
-/* line 80, ../sass/base/_typography.scss */
+/* line 81, ../sass/base/_typography.scss */
 h4 {
   font-size: 1em;
   line-height: 1.41176em;
   font-weight: normal;
 }
 
-/* line 85, ../sass/base/_typography.scss */
+/* line 86, ../sass/base/_typography.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.70092em;
   font-weight: normal;
 }
 
-/* line 90, ../sass/base/_typography.scss */
+/* line 91, ../sass/base/_typography.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.88235em;
@@ -1404,8 +1408,9 @@ nav.tabs li a:hover, nav.tabs li a.active {
 /*
  * Basic page styling.
  */
-/* line 5, ../sass/features/sub/_basic-page.scss */
-.center h1 {
+/* line 6, ../sass/features/sub/_basic-page.scss */
+.center h1,
+.center .title {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
@@ -1413,8 +1418,8 @@ nav.tabs li a:hover, nav.tabs li a.active {
   color: #3298d6;
   margin-bottom: 30px;
 }
-/* line 11, ../sass/features/sub/_basic-page.scss */
-.center h2 {
+/* line 12, ../sass/features/sub/_basic-page.scss */
+.center .subtitle {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
@@ -1427,21 +1432,21 @@ nav.tabs li a:hover, nav.tabs li a.active {
   margin-bottom: 20px;
 }
 @media (min-width: 34em) {
-  /* line 11, ../sass/features/sub/_basic-page.scss */
-  .center h2 {
+  /* line 12, ../sass/features/sub/_basic-page.scss */
+  .center .subtitle {
     font-size: 34px;
   }
 }
-/* line 25, ../sass/features/sub/_basic-page.scss */
+/* line 26, ../sass/features/sub/_basic-page.scss */
 .center h3 {
   margin-bottom: 0;
 }
-/* line 29, ../sass/features/sub/_basic-page.scss */
+/* line 30, ../sass/features/sub/_basic-page.scss */
 .center h4 {
   margin-bottom: 0;
 }
 
-/* line 35, ../sass/features/sub/_basic-page.scss */
+/* line 36, ../sass/features/sub/_basic-page.scss */
 .intro {
   width: 100%;
   float: left;
@@ -1454,7 +1459,7 @@ nav.tabs li a:hover, nav.tabs li a.active {
   margin-bottom: 30px;
 }
 @media (min-width: 34em) {
-  /* line 35, ../sass/features/sub/_basic-page.scss */
+  /* line 36, ../sass/features/sub/_basic-page.scss */
   .intro {
     background-image: url("../images/border.png");
     background-repeat: no-repeat;
@@ -1466,7 +1471,7 @@ nav.tabs li a:hover, nav.tabs li a.active {
   }
 }
 
-/* line 55, ../sass/features/sub/_basic-page.scss */
+/* line 56, ../sass/features/sub/_basic-page.scss */
 blockquote {
   text-indent: 30px;
   background-image: url("../images/quote.png");
@@ -1475,7 +1480,7 @@ blockquote {
   color: #9c9c9c;
 }
 
-/* line 63, ../sass/features/sub/_basic-page.scss */
+/* line 64, ../sass/features/sub/_basic-page.scss */
 .field-collection-view {
   width: 100%;
   float: left;
@@ -1484,21 +1489,21 @@ blockquote {
   margin-bottom: 60px;
 }
 
-/* line 67, ../sass/features/sub/_basic-page.scss */
+/* line 68, ../sass/features/sub/_basic-page.scss */
 .text-block {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 70, ../sass/features/sub/_basic-page.scss */
+/* line 71, ../sass/features/sub/_basic-page.scss */
 .text-block .group-left {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-/* line 73, ../sass/features/sub/_basic-page.scss */
+/* line 74, ../sass/features/sub/_basic-page.scss */
 .text-block .group-right {
   width: 100%;
   float: left;
@@ -1506,13 +1511,13 @@ blockquote {
   display: inline;
 }
 @media (min-width: 34em) {
-  /* line 78, ../sass/features/sub/_basic-page.scss */
+  /* line 79, ../sass/features/sub/_basic-page.scss */
   .text-block .group-left {
     width: 32.11715%;
     float: left;
     margin-right: 1.82427%;
   }
-  /* line 81, ../sass/features/sub/_basic-page.scss */
+  /* line 82, ../sass/features/sub/_basic-page.scss */
   .text-block .group-right {
     width: 66.05858%;
     float: right;
@@ -1520,11 +1525,11 @@ blockquote {
   }
 }
 
-/* line 89, ../sass/features/sub/_basic-page.scss */
+/* line 90, ../sass/features/sub/_basic-page.scss */
 .teaser {
   margin-bottom: 60px;
 }
-/* line 92, ../sass/features/sub/_basic-page.scss */
+/* line 93, ../sass/features/sub/_basic-page.scss */
 .teaser .title {
   background-color: #f0f0f0;
   font-size: 35px;
@@ -1533,12 +1538,13 @@ blockquote {
   padding: 0 15px;
   line-height: 1.6em;
   margin-bottom: 15px;
+  text-align: left;
 }
-/* line 101, ../sass/features/sub/_basic-page.scss */
+/* line 103, ../sass/features/sub/_basic-page.scss */
 .teaser .body {
   margin-bottom: 1em;
 }
-/* line 107, ../sass/features/sub/_basic-page.scss */
+/* line 109, ../sass/features/sub/_basic-page.scss */
 .teaser .read-more a {
   display: inline-block;
   padding: 8px 14px;

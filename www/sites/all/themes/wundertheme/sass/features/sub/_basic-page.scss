@@ -2,13 +2,14 @@
  * Basic page styling.
  */
 .center {
-  h1 {
+  h1,
+  .title {
     @include span-columns(12);
     color: $blue;
     margin-bottom: 30px;
   }
 
-  h2 {
+  .subtitle {
     @include span-columns(12);
     padding: 8px 20px 10px;
     background-color: $light-grey;
@@ -97,6 +98,7 @@ blockquote {
     padding: 0 15px;
     line-height: 1.6em;
     margin-bottom: 15px;
+    text-align: left;
   }
   .body {
     margin-bottom: 1em;

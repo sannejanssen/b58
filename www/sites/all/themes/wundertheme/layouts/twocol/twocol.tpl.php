@@ -15,7 +15,7 @@ if(!$content['col_first'] || !$content['col_second']) {
 $css = 'class="' . implode(' ', $col_class) . '"';
 ?>
 
-<?php if(isset($content['widescreen'])): ?>
+<?php if(!empty($content['widescreen'])): ?>
   <div class="widescreen"><?php print $content['widescreen']; ?></div>
 <?php endif; ?>
 
