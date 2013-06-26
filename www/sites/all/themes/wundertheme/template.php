@@ -125,6 +125,14 @@ function wundertheme_breadcrumb($variables) {
   $variables['breadcrumb'][] = drupal_get_title();
   $breadcrumb = $variables['breadcrumb'];
 
+  // Fix for mission & vision page
+
+  foreach ($breadcrumb as $id => $value) {
+    if($value == 'Vision') {
+      $breadcrumb[$id] = t('Mission & Vision');
+    }
+  }
+
   if (!empty($breadcrumb)) {
     // Provide a navigational heading to give context for breadcrumb links to
     // screen-reader users. Make the heading invisible with .element-invisible.
