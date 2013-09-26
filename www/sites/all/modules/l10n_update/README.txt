@@ -26,43 +26,42 @@ Installation
   Download, unpack the module the usual way.
   Enable this module and the Locale module (core).
 
-  You need at least one language (besides the default English).
-  On Administration > Configuration > Regional and language > Languages:
-    Click "Add language".
-    Select a language from the select list "Language name".
-    Then click the "Add language" button.
+  You need at least one language other than English.
+  On Administration > Configuration > Regional and language:
+    Click "Add language"
+    Pull-down menu: Choose your new language
+    Then click "Add language"
 
   Drupal is now importing interface translations. This can take a few minutes.
-  When it's finished, you'll get a confirmation with a summary of the
-  translations that have been imported.
+  When it's finished, you'll get a confirmation with a summary of all
+  translation files that have been pulled in.
 
   If required, enable the new language as default language.
-  Administration > Configuration > Regional and language > Languages:
-    Select your new default language.
+  Home > Administration > Configuration > Regional and language:
+    Select your new language as default
 
 Update interface translations
 -----------------------------
-  You want to import translations regularly using cron. You can enable this
-  on Administration > Configuration > Regional and language > Languages:
-    Choose the "Translation updates" tab.
-    Change "Check for updates" to "Daily" or "Weekly" instead of the default "Never".
-  From now on cron will check for updated translations, and import them is required.
+  On Home > Administration > Configuration > Regional and language:
+    Choose the "Translation updates" tab
+    Change "Check for updates" to Daily or Weekly instead of the default "Never".
 
-  The status of the translations is reported on the "Status report" page at 
-  Administration > Reports.
+  Cron will from now on check for updated translations, and will report the
+  update status on the status page (Home > Administration > Reports).
 
   To check the translation status and execute updates manually, go to
-    Administration > Configuration > Regional and language > Translate inteface
-    Choose the "Update" tab.
+     Administration > Configuration > Regional and language > Translate inteface
+  Here you see English and your new language.
+    Choose the "Update" tab
   You see a list of all modules and their translation status.
   On the bottom of the page, you can manually update using "Update translations".
 
 Use Drush
 ---------
   You can also use drush to update your translations:
-    drush l10n-update           # Update translations.
-    drush l10n-update-refresh   # Refresh available information.
-    drush l10n-update-status    # Show translation status of available project
+  drush l10n-update           # Update translations.
+  drush l10n-update-refresh   # Refresh available information.
+  drush l10n-update-status    # Show translation status of available project
 
 
 Summary of administrative pages
