@@ -8,33 +8,55 @@
  *
  */
 
+/* LAYOUT */
+.language {
+  @include span-columns(9,9);
 
+  .language-switcher-locale-url {
+    li {
+      @include span-columns(4);
+      
+      a {
+        @include span-columns(12);
+      }
+      
+
+      &.last {
+        @include omega;
+      }
+    }
+
+    /* iPad landscape */
+    @include at-breakpoint($breakpoint_2) {
+      .language-switcher-locale-url {
+        float: right;
+      }
+    }
+  }
+}
 
 /* DESIGN */
 
 /* Language switcher */
 .language {
-  
   margin-bottom: 0.5em;
 
-  ul {
+  .language-switcher-locale-url {
     @extend %horizontal-menu;
-  }
-
-  li {
-    text-align: center;
-    background-color: $light-grey;
 
     a {
+      text-align: center;
+      background-color: $light-grey;
       display: block;
       padding: 5px 0 10px;
       color: #575756;
       opacity: 0.7;
-      
+
       &.active,
       &:hover,
       &:focus {
         color: #000;
+        opacity: 1;
       }
 
       .lt-ie9 & {
@@ -45,23 +67,34 @@
 
   /* iPad landscape */
   @include at-breakpoint($breakpoint_2) {
-    ul {
-      float: right;
+    
+    .language-switcher-locale-url {
       background-color: $light-grey;
-      padding: 3px 20px 6px 5px;
+      padding: 10px 10px 5px 5px;
       color: #575756;
       font-size: 0.706em;
 
-
       li {
-        background: none;
-        margin: 0;
+        @include reset-columns();
+        float: left;
+        display: block;
+        line-height: 0.706em;
+
+
+        a {
+          @include reset-columns();
+          display: inline;
+          padding: 0;
+          font-size: 0.706em;
+        }
 
         &::before {
           content: "|";
           margin: 0 5px 8px;
           opacity: 0.7;
           font-size: 12px;
+          float: left;
+          display: block;
         }
 
         &.first {
@@ -70,32 +103,7 @@
             margin-left: 0;
           }
         }
-        a {
-          padding: 5px 0px;
-          font-size: 0.706em;
-          display: inline;
-        }
       }
-    }
-  }
-}
-
-/* LAYOUT */
-.language {
-  @include span-columns(9,9);
-
-  li {
-    @include span-columns(4);
-
-    &.last {
-      @include span-columns(4 omega);
-    }
-  }
-
-  /* iPad landscape */
-  @include at-breakpoint($breakpoint_2) {
-    ul {
-      float: right;
     }
   }
 }
