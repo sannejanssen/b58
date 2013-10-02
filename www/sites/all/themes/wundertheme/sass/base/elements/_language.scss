@@ -28,9 +28,7 @@
 
     /* iPad landscape */
     @include at-breakpoint($breakpoint_2) {
-      .language-switcher-locale-url {
-        float: right;
-      }
+      float: right;
     }
   }
 }
@@ -70,7 +68,7 @@
     
     .language-switcher-locale-url {
       background-color: $light-grey;
-      padding: 10px 10px 5px 5px;
+      padding: 8px 10px;
       color: #575756;
       font-size: 0.706em;
 
@@ -78,8 +76,7 @@
         @include reset-columns();
         float: left;
         display: block;
-        line-height: 0.706em;
-
+        line-height: 16px;
 
         a {
           @include reset-columns();
@@ -90,7 +87,7 @@
 
         &::before {
           content: "|";
-          margin: 0 5px 8px;
+          margin: 0 5px;
           opacity: 0.7;
           font-size: 12px;
           float: left;
