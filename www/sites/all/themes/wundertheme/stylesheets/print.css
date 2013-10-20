@@ -352,7 +352,7 @@ table {
 /* iPad portrait */
 /* iPad landscape */
 /* Layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000333}}
 .container {
   *zoom: 1;
   max-width: 64.464em;
@@ -370,7 +370,7 @@ table {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000342}}
 .main {
   width: 100%;
   float: left;
@@ -379,7 +379,7 @@ table {
 }
 
 @media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000347}}
   footer {
     clear: both;
   }
@@ -399,13 +399,13 @@ table {
 }
 */
 /* Custom panel layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000365}}
 .widescreen {
   display: none;
   text-align: center;
 }
 @media (min-width: 32em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000365}}
   .widescreen {
     display: block;
     width: 100%;
@@ -422,7 +422,7 @@ table {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000376}}
 .panel {
   width: 100%;
   float: left;
@@ -430,21 +430,21 @@ table {
   display: inline;
   /* iPad portrait */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000379}}
 .panel .top {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000382}}
 .panel .column {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000385}}
 .panel .bottom {
   width: 100%;
   float: left;
@@ -452,33 +452,33 @@ table {
   display: inline;
 }
 @media (min-width: 32em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000392}}
   .panel .column {
     width: 49.08786%;
     float: left;
     margin-right: 1.82427%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000395}}
   .panel .column.second {
     width: 49.08786%;
     float: right;
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\00003101}}
   .panel.single .column {
     width: 100%;
     float: left;
     margin-right: 1.82427%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000392}}
 .lt-ie9 .panel .column {
   width: 49.08786%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\0000395}}
 .lt-ie9 .panel .column.second {
   width: 49.08786%;
   float: right;
@@ -486,7 +486,7 @@ table {
   *margin-left: -1.176em;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/workspace\/sannejanssen\/b58\/www\/sites\/all\/themes\/wundertheme\/sass\/base\/_layout\.scss}line{font-family:\00003101}}
 .lt-ie9 .panel.single .column {
   width: 100%;
   float: left;

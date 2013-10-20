@@ -30,7 +30,6 @@ $breakpoint_2: 32em lt-ie9; /* iPad portrait */
 $breakpoint_3: 49em lt-ie9; /* iPad landscape */
 
 /* Layout */
-
 .container {
   @include container;
   padding: 0 0.5em;

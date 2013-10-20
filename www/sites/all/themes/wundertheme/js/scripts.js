@@ -28,6 +28,21 @@
     }
   };
 
+   Drupal.behaviors.backToTop = {
+    attach: function(context) {
+      var $backToTop = $('a', '#back-to-top');
+
+      $backToTop.bind('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+      });
+
+
+      console.log($backToTop);
+
+    }
+  };
+
   /*
   // Responsive menu
   Drupal.behaviors.language = {

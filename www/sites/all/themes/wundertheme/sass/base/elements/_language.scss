@@ -68,7 +68,7 @@
     
     .language-switcher-locale-url {
       background-color: $light-grey;
-      padding: 4px 12px 7px;
+      padding: 4px 12px;
       color: #575756;
       font-size: 0.706em;
 
@@ -76,7 +76,7 @@
         @include reset-columns();
         float: left;
         display: block;
-        line-height: 20px;
+        line-height: 25px;
 
         a {
           @include reset-columns();

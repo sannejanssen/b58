@@ -157,6 +157,10 @@
     <?php print render($page['content']); ?>
   <?php endif; ?>
 
+  <div id="back-to-top">
+    <a href="#back-to-top" title="<?php print t('Back to top'); ?>" ><?php print t('Back to top'); ?></a>
+  </div>
+
   <footer role="contentinfo">
     <div class="container">
       <?php print render($page['footer']); ?>

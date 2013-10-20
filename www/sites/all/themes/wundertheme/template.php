@@ -51,6 +51,7 @@ function wundertheme_css_alter(&$css) {
     'modules/update/update.css' => FALSE,
     'modules/user/user.css' => FALSE,
     'sites/all/modules/field_collection/field_collection.theme.css' => FALSE,
+    'sites/all/modules/contrib/field_collection/field_collection.theme.css' => FALSE,
   );
 
   $css = array_diff_key($css, $exclude);
@@ -125,11 +126,15 @@ function wundertheme_breadcrumb($variables) {
   $variables['breadcrumb'][] = drupal_get_title();
   $breadcrumb = $variables['breadcrumb'];
 
-  // Fix for mission & vision page
-
   foreach ($breadcrumb as $id => $value) {
-    if($value == 'Vision') {
+
+    // Fix for mission & vision page
+    if($value == 'Vision' || $value == 'Visión') {
       $breadcrumb[$id] = t('Mission & Vision');
+    }
+
+    if($value == 'Who we are') {
+      $breadcrumb[$id] = t($value);
     }
   }
 
@@ -158,6 +163,14 @@ function wundertheme_preprocess_page(&$variables){
   $variables['page']['use_panels'] = FALSE;
   if (panels_get_current_page_display()) {
      $variables['page']['use_panels'] = TRUE;
+  }
+
+  if (menu_get_object()) {
+    $node = menu_get_object();
+
+    if($node->nid == 18 || $node->nid == 20) {
+      drupal_set_title(t('Mission & Vision'));
+    }
   }
 }
 

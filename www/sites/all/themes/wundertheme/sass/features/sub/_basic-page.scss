@@ -10,17 +10,7 @@
   }
 
   .subtitle {
-    @include span-columns(12);
-    padding: 8px 20px 10px;
-    background-color: $light-grey;
-    color: $blue;
-    font-size: 1.4 * $base-font-size;
-    line-height: 1.2em;
-    margin-bottom: 20px;
-
-    @include at-breakpoint($breakpoint_2) {
-      font-size: 2 * $base-font-size;
-    }
+    @extend %title-with-background;
   }
 
   h3 {

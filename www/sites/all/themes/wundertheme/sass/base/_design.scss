@@ -106,7 +106,7 @@ header,
 }
 
 .center {
-  padding: 1em 0;
+  padding: 1em 0 3em;
   min-height: 200px;
 }
 
@@ -180,7 +180,24 @@ nav.tabs {
   }
 }
 
+#back-to-top {
+  @include span-columns(12);
+  background-color: $white;
 
+  a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/back-to-top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-transform: uppercase;
+    text-indent: -9999em;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 
 
