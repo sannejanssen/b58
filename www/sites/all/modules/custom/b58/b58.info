@@ -1,0 +1,5 @@
+name = B58 Module
+description = Custom code for B58.
+version = 7.x-1.0
+package = B58
+core = 7.x

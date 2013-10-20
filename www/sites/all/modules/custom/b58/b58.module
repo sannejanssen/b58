@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Custom functionality for B58.
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+/*
+
+function b58_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools' && (in_array($plugin_type, array('content_types')))) {
+    return 'plugins/' . $plugin_type;
+  }
+}
+*/
+
+/**
+ * Implements hook_block_info().
+ */
+function b58_block_info() {
+
+  $blocks = array();
+
+  $blocks['b58-international-contacts-map'] = array(
+    'info' => t('International contacts map'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements of hook_block_view().
+ */
+function b58_block_view($delta) {
+
+  switch ($delta) {
+
+    case 'b58-international-contacts-map':
+      module_load_include('inc', 'b58', 'includes/blocks');
+      return b58_international_contacts_map();
+
+  }
+}
