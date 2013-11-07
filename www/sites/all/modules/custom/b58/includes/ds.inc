@@ -10,30 +10,31 @@
  */
 function b58_ds_contact_details($field) {
   $node = $field['entity'];
-  $output = '';
+  $output = '<div class="contact-details">';
 
-  $expertise = field_get_items('node', $node, 'body');
+  if ($node->type == 'founder') {
+    $expertise = field_get_items('node', $node, 'body');
+
+    // Add expertise.
+    $output .= '<div class="expertise">';
+    $output .= '<h3>' . t('Expertise') . '</h3>';
+
+    if ($expertise) {
+      $output .= '<div class="content">';
+      $output .= '<div class="icon"></div>';
+      $output .= '<div class="value">' . $expertise[0]['safe_value'] . '</div>';
+      $output .= '</div>';
+    }
+
+    $output .= '</div>'; // end expertise
+  }
+
   $twitter = field_get_items('node', $node, 'field_twitter_link');
   $linkedin = field_get_items('node', $node, 'field_linkedin_link');
   $googleplus = field_get_items('node', $node, 'field_googleplus_link');
   $email = field_get_items('node', $node, 'field_email');
   $skype = field_get_items('node', $node, 'field_skype');
   $phone = field_get_items('node', $node, 'field_phone');
-
-  $output .= '<div class="contact-details">';
-
-  // Add expertise.
-  $output .= '<div class="expertise">';
-  $output .= '<h3>' . t('Expertise') . '</h3>';
-
-  if ($expertise) {
-    $output .= '<div class="content">';
-    $output .= '<div class="icon"></div>';
-    $output .= '<div class="value">' . $expertise[0]['safe_value'] . '</div>';
-    $output .= '</div>';
-  }
-
-  $output .= '</div>'; // end expertise
 
   // Add contact details.
   $output .= '<div class="contact">';
