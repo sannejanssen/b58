@@ -2,14 +2,37 @@
  * Form theming
  */
 
-
+.node-webform {
+  &.view-mode-full {
+    padding: 30px;
+    background-color: $light-grey;
+    margin-bottom: 10px;
+  }
+}
 
 input {
+  @include span-columns(12);
+
+  &[type=text],
+  &[type=email] {
+    border: none;
+    padding: 7px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.error {
+      border: 1px solid #b82820;
+    }
+  }
+
   &[type=checkbox] {
     display: none;
 
     & + label {
       padding-left: 25px;
+      position: relative;
 
       &:before {
         content: "";
@@ -20,31 +43,164 @@ input {
         position: absolute;
         left: 0;
         bottombottom: 1px;
-        background-color: #aaa;
-        box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+        background-color: $white;
       }
     }
 
     &:checked + label:before {
-      content: "\2713";  
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
-      font-size: 15px;  
-      color: #f3f3f3;  
-      text-align: center;  
+      content: "\2714";
+      font-size: 15px;
+      color: $white;
+      background-color: $blue;
+      text-align: center;
       line-height: 15px;
+    }
+  }
+
+  &[type=radio] {
+    display: none;
+
+    & + label {
+      padding-left: 25px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        position: absolute;
+        left: 0;
+        bottombottom: 1px;
+        background-color: $white;
+        border-radius: 8px;
+      }
+    }
+
+    &:checked + label:before {
+      content: "\2022";
+      font-size: 29px;
+      color: $white;
+      background-color: $blue;
+      text-align: center;
+      line-height: 12px;
+    }
+  }
+
+  &[type=submit] {
+    @include span-columns(12);
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+    background-color: $blue-grey;
+    background-image: url(../images/arrow-down-white.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    font-size: 1.647em; /* 28px */
+    line-height: 1em; /* 28px */
+    text-transform: uppercase;
+    color: $white;
+    text-align: left;
+    padding-left: 35px;
+
+    @include at-breakpoint($breakpoint_3) {
+      @include reset-columns();
+      padding-left: 60px;
     }
   }
 }
 
-.form-type-checkbox {
-  /*
+.webform-component {
   @include span-columns(12);
-  */
-  background-color: orange;
+  margin-bottom: 20px;
 
+  .select-or-other {
+    > .form-item {
+      > label {
+        font-size: 1.412em; /* 24px */
+        font-weight: 300;
+
+        @include at-breakpoint($breakpoint_3) {
+          @include span-columns(3,8);
+          text-align: right;
+          padding-right: 30px;
+        }
+      }
+
+      .form-checkboxes,
+      .form-radios {
+        @include span-columns(12);
+        margin-top: 5px;
+
+        > .form-item {
+          @include span-columns(8,8);
+          margin-bottom: 10px;
+        }
+
+        @include at-breakpoint($breakpoint_3) {
+          @include span-columns(5 omega,8);
+        }
+      }
+
+      &.form-type-textfield {
+        @include span-columns(12);
+
+        input {
+          @include span-columns(12);
+
+          @include at-breakpoint($breakpoint_3) {
+            @include span-columns(5 omega,8);
+          }
+        }
+      }
+    }
+  }
 }
 
-.select-or-other {
-  /* @include span-columns(12); */
-  background-color: yellow;
+fieldset {
+  @include span-columns(12);
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  legend {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 1.412em; /* 24px */
+    font-weight: 300;
+  }
+
+  .fieldset-wrapper {
+    @include span-columns(12);
+
+    .webform-component {
+      margin-bottom: 10px;
+    }
+
+    label {
+      @include span-columns(12);
+      padding-top: 5px;
+      font-size: 1.176em; /* 18px */
+
+      @include at-breakpoint($breakpoint_3) {
+        @include span-columns(4,12);
+        text-align: right;
+        padding-right: 10px;
+      }
+    }
+
+    .form-text {
+      @include span-columns(12);
+
+      @include at-breakpoint($breakpoint_3) {
+        @include span-columns(8 omega,12);
+      }
+    }
+  }
+}
+
+.form-actions {
+  @include span-columns(12);
+  text-align: right;
 }

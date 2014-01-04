@@ -128,8 +128,13 @@ footer {
     border: 1px solid #ccc;
     padding: 20px;
 
+    &.error {
+      background-color: rgba(184,107,103,0.3);
+      ul {
+        margin-left: 20px;
+      }
+    }
   }
-  
 }
 
 .breadcrumb {

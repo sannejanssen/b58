@@ -12,7 +12,7 @@ function b58_ds_contact_details($field) {
   $node = $field['entity'];
   $output = '<div class="contact-details">';
 
-  if ($node->type == 'founder') {
+  if ($node->type == 'founder' && $field['view_mode'] == 'full') {
     $expertise = field_get_items('node', $node, 'body');
 
     // Add expertise.
@@ -80,7 +80,7 @@ function b58_ds_contact_details($field) {
       $output .= '</div>'; // end linkedin link.
     }
 
-    if ($phone) {
+    if ($phone && $field['view_mode'] != 'teaser') {
       $output .= '<div class="link phone">';
       $output .= l(t('Call ') . $node->title, 'tel:' . $phone[0]['value']);
       $output .= '<span class="hover-block">' . t('Call me') . '</span>';

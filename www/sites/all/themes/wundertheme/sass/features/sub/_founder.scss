@@ -93,4 +93,87 @@
       @extend %social-links;
     }
   }
+
+  &.view-mode-teaser {
+    @include span-columns(12);
+    background-color: $light-grey;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    @include at-breakpoint($breakpoint_3) {
+      padding: 15px;
+    }
+
+    .group-left {
+      @include span-columns(3,12);
+
+      @include at-breakpoint($breakpoint_3) {
+        @include span-columns(4,12);
+      }
+
+      img {
+        border: 3px solid $white;
+      }
+    }
+
+    .group-right {
+      @include span-columns(9 omega,12);
+
+      @include at-breakpoint($breakpoint_3) {
+        @include span-columns(8 omega,12);
+        background-image: url(../images/arrow-down.png);
+        background-repeat: no-repeat;
+        background-position: 0px 10px;
+        padding-top: 40px;
+      }
+
+      h3 {
+        display: none;
+      }
+
+      .name {
+        display: inline-block;
+        background-color: $blue;
+        padding: 5px 20px;
+        color: $white;
+
+        @include at-breakpoint($breakpoint_3) {
+          font-size: 1.059em; /* 18px */
+          line-height: 1.294em; /* 22px */
+          padding: 5px 15px;
+        }
+      }
+
+      .phone {
+        @include span-columns(12);
+      }
+
+      .full-email {
+        @include span-columns(12);
+        font-weight: 600;
+      }
+
+      .contact-details {
+        @include span-columns(12);
+        padding: 0;
+        margin: 10px 0 0 0;
+        background: transparent;
+        
+
+        .content {
+          margin-right: 0;
+
+          .icon {
+            display: none;
+          }
+
+          .value {
+            @include span-columns(12);
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
