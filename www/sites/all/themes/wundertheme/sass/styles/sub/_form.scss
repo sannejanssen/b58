@@ -14,7 +14,8 @@ input {
   @include span-columns(12);
 
   &[type=text],
-  &[type=email] {
+  &[type=email],
+  &[type=password] {
     border: none;
     padding: 7px;
 
@@ -24,6 +25,10 @@ input {
 
     &.error {
       border: 1px solid #b82820;
+    }
+
+    .page-user & {
+      border: 1px solid #ccc;
     }
   }
 
@@ -197,6 +202,14 @@ fieldset {
         @include span-columns(8 omega,12);
       }
     }
+  }
+}
+
+.form-item {
+  .description {
+    @include span-columns(12);
+    margin-bottom: 10px;
+    color: $medium-grey;
   }
 }
 

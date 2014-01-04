@@ -1467,29 +1467,33 @@ input {
   margin-right: 1.82427%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000317}}
-input[type=text], input[type=email] {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000318}}
+input[type=text], input[type=email], input[type=password] {
   border: none;
   padding: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000321}}
-input[type=text]:focus, input[type=email]:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000322}}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000325}}
-input[type=text].error, input[type=email].error {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000326}}
+input[type=text].error, input[type=email].error, input[type=password].error {
   border: 1px solid #b82820;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000330}}
+.page-user input[type=text], .page-user input[type=email], .page-user input[type=password] {
+  border: 1px solid #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000335}}
 input[type=checkbox] {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000338}}
 input[type=checkbox] + label {
   padding-left: 25px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000342}}
 input[type=checkbox] + label:before {
   content: "";
   display: inline-block;
@@ -1501,7 +1505,7 @@ input[type=checkbox] + label:before {
   bottombottom: 1px;
   background-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000355}}
 input[type=checkbox]:checked + label:before {
   content: "\2714";
   font-size: 15px;
@@ -1510,16 +1514,16 @@ input[type=checkbox]:checked + label:before {
   text-align: center;
   line-height: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000365}}
 input[type=radio] {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000368}}
 input[type=radio] + label {
   padding-left: 25px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000372}}
 input[type=radio] + label:before {
   content: "";
   display: inline-block;
@@ -1532,7 +1536,7 @@ input[type=radio] + label:before {
   background-color: white;
   border-radius: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000386}}
 input[type=radio]:checked + label:before {
   content: "\2022";
   font-size: 29px;
@@ -1541,7 +1545,7 @@ input[type=radio]:checked + label:before {
   text-align: center;
   line-height: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000396}}
 input[type=submit] {
   width: 100%;
   float: left;
@@ -1564,7 +1568,7 @@ input[type=submit] {
   padding-left: 35px;
 }
 @media (min-width: 52.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\0000396}}
   input[type=submit] {
     float: none;
     width: auto;
@@ -1573,7 +1577,7 @@ input[type=submit] {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003119}}
 .webform-component {
   width: 100%;
   float: left;
@@ -1581,14 +1585,14 @@ input[type=submit] {
   display: inline;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003125}}
 .webform-component .select-or-other > .form-item > label {
   font-size: 1.412em;
   /* 24px */
   font-weight: 300;
 }
 @media (min-width: 52.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003125}}
   .webform-component .select-or-other > .form-item > label {
     width: 35.774%;
     float: left;
@@ -1597,7 +1601,7 @@ input[type=submit] {
     padding-right: 30px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003137}}
 .webform-component .select-or-other > .form-item .form-checkboxes,
 .webform-component .select-or-other > .form-item .form-radios {
   width: 100%;
@@ -1606,7 +1610,7 @@ input[type=submit] {
   display: inline;
   margin-top: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003141}}
 .webform-component .select-or-other > .form-item .form-checkboxes > .form-item,
 .webform-component .select-or-other > .form-item .form-radios > .form-item {
   width: 100%;
@@ -1616,7 +1620,7 @@ input[type=submit] {
   margin-bottom: 10px;
 }
 @media (min-width: 52.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003137}}
   .webform-component .select-or-other > .form-item .form-checkboxes,
   .webform-component .select-or-other > .form-item .form-radios {
     width: 61.4644%;
@@ -1624,14 +1628,14 @@ input[type=submit] {
     margin-right: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003151}}
 .webform-component .select-or-other > .form-item.form-type-textfield {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003154}}
 .webform-component .select-or-other > .form-item.form-type-textfield input {
   width: 100%;
   float: left;
@@ -1639,7 +1643,7 @@ input[type=submit] {
   display: inline;
 }
 @media (min-width: 52.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003154}}
   .webform-component .select-or-other > .form-item.form-type-textfield input {
     width: 61.4644%;
     float: right;
@@ -1647,7 +1651,7 @@ input[type=submit] {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003166}}
 fieldset {
   width: 100%;
   float: left;
@@ -1657,7 +1661,7 @@ fieldset {
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003172}}
 fieldset legend {
   margin: 0 0 20px 0;
   padding: 0;
@@ -1665,18 +1669,18 @@ fieldset legend {
   /* 24px */
   font-weight: 300;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003179}}
 fieldset .fieldset-wrapper {
   width: 100%;
   float: left;
   margin-right: 1.82427%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003182}}
 fieldset .fieldset-wrapper .webform-component {
   margin-bottom: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003186}}
 fieldset .fieldset-wrapper label {
   width: 100%;
   float: left;
@@ -1687,7 +1691,7 @@ fieldset .fieldset-wrapper label {
   /* 18px */
 }
 @media (min-width: 52.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003186}}
   fieldset .fieldset-wrapper label {
     width: 32.11715%;
     float: left;
@@ -1696,7 +1700,7 @@ fieldset .fieldset-wrapper label {
     padding-right: 10px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003198}}
 fieldset .fieldset-wrapper .form-text {
   width: 100%;
   float: left;
@@ -1704,7 +1708,7 @@ fieldset .fieldset-wrapper .form-text {
   display: inline;
 }
 @media (min-width: 52.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003198}}
   fieldset .fieldset-wrapper .form-text {
     width: 66.05858%;
     float: right;
@@ -1712,7 +1716,17 @@ fieldset .fieldset-wrapper .form-text {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003209}}
+.form-item .description {
+  width: 100%;
+  float: left;
+  margin-right: 1.82427%;
+  display: inline;
+  margin-bottom: 10px;
+  color: #9c9c9c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Sanne\/Documents\/002_KLANTEN\/0014_B58\/06_WEBSITE\/01_FILES\/www\/sites\/all\/themes\/wundertheme\/sass\/styles\/sub\/_form\.scss}line{font-family:\00003216}}
 .form-actions {
   width: 100%;
   float: left;
