@@ -76,6 +76,87 @@
   }
 }
 
+.highlighted-internationals {
+  @include span-columns(12);
+
+  .contact {
+    @include span-columns(12);
+    margin-bottom: 10px;
+
+    @include at-breakpoint($breakpoint_2) {
+      @include span-columns(4,12);
+
+      &.views-row-last {
+        @include omega;
+      }
+    }
+
+    .group-left {
+      @include span-columns(6,12);
+      background-color: $light-grey;
+      padding: 10px;
+      text-align: center;
+
+      img {
+        display: inline;
+      }
+
+      @include at-breakpoint($breakpoint_2) {
+        @include span-columns(12,12);
+      }
+
+      @include at-breakpoint($breakpoint_3) {
+        @include span-columns(6,12);
+      }
+    }
+
+    .group-right {
+      @include span-columns(6 omega,12);
+      padding-top: 70px;
+
+      @include at-breakpoint($breakpoint_1) {
+        padding-top: 140px;
+      }
+
+      @include at-breakpoint($breakpoint_2) {
+        padding-top: 10px;
+        @include span-columns(12,12);
+      }
+
+      @include at-breakpoint($breakpoint_3) {
+        @include span-columns(6 omega,12);
+        background-image: url(../images/arrow-down.png);
+        background-repeat: no-repeat;
+        background-position: 0px 70px;
+        padding-top: 100px;
+      }
+
+      .name {
+        display: inline-block;
+        background-color: $blue;
+        padding: 5px 20px;
+        color: $white;
+
+        h2 {
+          font-size: 18px; /* 18px */
+          line-height: 22px; /* 22px */
+          margin-bottom: 0;
+        }
+
+        @include at-breakpoint($breakpoint_3) {
+          padding: 6px 9px;
+        }
+      }
+
+      .country {
+        @include span-columns(12);
+        margin-top: 10px;
+        color: $blue-grey;
+      }
+    }
+  }
+}
+
 /* International contacts map */
 .ic-map {
   .mobile {
